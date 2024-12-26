@@ -1,0 +1,24 @@
+D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\demo_pollo\bin\Release\demo_pollo.exe.config
+D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\demo_pollo\bin\Release\demo_pollo.exe
+D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\demo_pollo\bin\Release\demo_pollo.pdb
+D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\demo_pollo\obj\Release\demo_pollo.csproj.AssemblyReference.cache
+D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\demo_pollo\obj\Release\demo_pollo.Form1.resources
+D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\demo_pollo\obj\Release\demo_pollo.Properties.Resources.resources
+D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\demo_pollo\obj\Release\demo_pollo.csproj.GenerateResource.cache
+D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\demo_pollo\obj\Release\demo_pollo.csproj.CoreCompileInputs.cache
+D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\demo_pollo\obj\Release\demo_pollo.exe
+D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\demo_pollo\obj\Release\demo_pollo.pdb
+\\192.168.0.10\Antonio-Notebook\demo_pollo\demo_pollo\obj\Release\demo_pollo.csproj.AssemblyReference.cache
+\\192.168.0.10\Antonio-Notebook\demo_pollo\demo_pollo\obj\Release\demo_pollo.exe
+\\192.168.0.10\Antonio-Notebook\demo_pollo\demo_pollo\obj\Release\demo_pollo.pdb
+D:\Escritorio\demo_pollo\demo_pollo\obj\Release\demo_pollo.csproj.AssemblyReference.cache
+D:\Escritorio\demo_pollo\demo_pollo\obj\Release\demo_pollo.Properties.Resources.resources
+D:\Escritorio\demo_pollo\demo_pollo\obj\Release\demo_pollo.csproj.GenerateResource.cache
+D:\Escritorio\demo_pollo\demo_pollo\obj\Release\demo_pollo.csproj.CoreCompileInputs.cache
+D:\Escritorio\demo_pollo\demo_pollo\obj\Release\demo_pollo.exe
+D:\Escritorio\demo_pollo\demo_pollo\obj\Release\demo_pollo.pdb
+D:\Escritorio\demo_pollo\demo_pollo\bin\Release\demo_pollo.exe.config
+D:\Escritorio\demo_pollo\demo_pollo\bin\Release\demo_pollo.exe
+D:\Escritorio\demo_pollo\demo_pollo\bin\Release\demo_pollo.pdb
+D:\Escritorio\demo_pollo\demo_pollo\obj\Release\demo_pollo.Main.resources
+D:\Escritorio\demo_pollo\demo_pollo\obj\Release\demo_pollo.FormMas.resources

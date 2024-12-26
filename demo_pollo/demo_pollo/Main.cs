@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace demo_pollo
 {
-    public partial class Form1 : Form
+    public partial class Main : Form
     {
         private Rectangle buttonOriginalRectangle;
         private Rectangle originalFormSize;
@@ -30,12 +30,16 @@ namespace demo_pollo
             { 10, "Corazones" },
             { 11, "Garras" }
         };
-        public Form1()
+        // Para almacenar temporalmente el código ingresado
+        StringBuilder codigoActual = new StringBuilder();
+        private Button ultimoBotonPresionado = null;
+        public Main()
         {
             InitializeComponent();
-            // Configurar el formulario en pantalla completa
-            //this.FormBorderStyle = FormBorderStyle.None; // Sin bordes ni barra de título
-            //this.WindowState = FormWindowState.Maximized; // Maximizar el formulario
+
+            this.MaximumSize = SystemInformation.PrimaryMonitorMaximizedWindowSize;
+            this.WindowState = FormWindowState.Maximized;
+
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -95,32 +99,53 @@ namespace demo_pollo
         private void btnCalibre_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button; // El botón que disparó el evento.
+
+            customButton1.BackColor = Color.DarkSeaGreen;
+            customButton2.BackColor = Color.DarkSeaGreen;
+            customButton3.BackColor = Color.DarkSeaGreen;
+            customButton4.BackColor = Color.DarkSeaGreen;
+            customButton5.BackColor = Color.DarkSeaGreen;
+            customButton7.BackColor = Color.DarkSeaGreen;
+            btn.BackColor = Color.OrangeRed;
+
             txtCalibre.Text = btn.Text; // Asigna el texto del botón al campo de calibre.
             GenerarCodigo(); // Regenera el código con la nueva información.
-        }
 
-        private void txtCodigoProducto_Click(object sender, EventArgs e)
-        {
-            gbNumpad.Visible = true; // Muestra el teclado numérico
         }
-
         private void btnNumpad_Click(object sender, EventArgs e)
         {
-            Button btn = sender as Button; // Obtiene el botón presionado
-            txtCodigoProducto.Text += btn.Text; // Agrega el número al TextBox
-
-            // Si el código tiene 2 dígitos, buscar el producto
-            if (txtCodigoProducto.Text.Length == 2)
+            Button btn = sender as Button; // Obtener el botón presionado
+            if (btn != null)
             {
-                BuscarProductoPorCodigo();
+                // Restaurar el color original del último botón presionado
+                if (ultimoBotonPresionado != null)
+                {
+                    ultimoBotonPresionado.BackColor = SystemColors.AppWorkspace; // Color predeterminado
+                }
+
+                // Cambiar el color del botón actualmente presionado
+                btn.BackColor = Color.OrangeRed;
+
+                // Guardar el botón actual como último presionado
+                ultimoBotonPresionado = btn;
+
+                // Agregar el número presionado al código actual
+                codigoActual.Append(btn.Text);
+
+                // Si el código tiene 2 dígitos, buscar el producto
+                if (codigoActual.Length == 2)
+                {
+                    BuscarProductoPorCodigo();
+                    codigoActual.Clear(); // Limpiar el código después de buscar
+                }
             }
         }
         // Buscar el producto por el código ingresado
         private void BuscarProductoPorCodigo()
         {
-            if (int.TryParse(txtCodigoProducto.Text, out int codigo))
+            if (int.TryParse(codigoActual.ToString(), out int codigo))
             {
-                // Verificar si existe un producto asociado al código
+                // Buscar el producto en el diccionario
                 if (productos.TryGetValue(codigo, out string producto))
                 {
                     MessageBox.Show($"Producto encontrado: {producto}", "Información");
@@ -130,24 +155,23 @@ namespace demo_pollo
 
                     // Cargar los datos del producto
                     CargarDatosProducto(producto);
-
-                    // Limpiar el TextBox y ocultar el teclado numérico
-                    txtCodigoProducto.Clear();
-                    gbNumpad.Visible = false;
                 }
                 else
                 {
                     MessageBox.Show("Código no válido. Intente nuevamente.", "Error");
-                    txtCodigoProducto.Clear();
                 }
             }
         }
+
+
+
         private void CargarDatosProducto(string producto)
         {
             // Llena los campos de datos según el producto seleccionado
             switch (producto)
             {
                 case "Pollo refrigerado con menudos A":
+                    txtDescripcion.Text = "Pollo refrigerado con menudos A";
                     txtPlanta.Text = "1519";
                     txtProducto.Text = "01";
                     txtTipoProducto.Text = "Entero";
@@ -157,6 +181,7 @@ namespace demo_pollo
                     break;
 
                 case "Pollo congelado con menudos A":
+                    txtDescripcion.Text = "Pollo congelado con menudos A";
                     txtPlanta.Text = "1519";
                     txtProducto.Text = "02";
                     txtTipoProducto.Text = "Entero";
@@ -166,6 +191,7 @@ namespace demo_pollo
                     break;
 
                 case "Pata muslo":
+                    txtDescripcion.Text = "Pata muslo";
                     txtPlanta.Text = "1519";
                     txtProducto.Text = "03";
                     txtTipoProducto.Text = "Trozado";
@@ -175,6 +201,7 @@ namespace demo_pollo
                     break;
 
                 case "Pata muslo con lomo":
+                    txtDescripcion.Text = "Pata muslo con lomo";
                     txtPlanta.Text = "1519";
                     txtProducto.Text = "04";
                     txtTipoProducto.Text = "Trozado";
@@ -184,6 +211,7 @@ namespace demo_pollo
                     break;
 
                 case "Suprema":
+                    txtDescripcion.Text = "Suprema";
                     txtPlanta.Text = "1519";
                     txtProducto.Text = "05";
                     txtTipoProducto.Text = "Trozado";
@@ -193,6 +221,7 @@ namespace demo_pollo
                     break;
 
                 case "Alas":
+                    txtDescripcion.Text = "Alas";
                     txtPlanta.Text = "1519";
                     txtProducto.Text = "06";
                     txtTipoProducto.Text = "Trozado";
@@ -202,6 +231,7 @@ namespace demo_pollo
                     break;
 
                 case "CMS":
+                    txtDescripcion.Text = "CMS";
                     txtPlanta.Text = "1519";
                     txtProducto.Text = "07";
                     txtTipoProducto.Text = "Trozado";
@@ -211,6 +241,7 @@ namespace demo_pollo
                     break;
 
                 case "Piel":
+                    txtDescripcion.Text = "Piel";
                     txtPlanta.Text = "1519";
                     txtProducto.Text = "08";
                     txtTipoProducto.Text = "Trozado";
@@ -220,6 +251,7 @@ namespace demo_pollo
                     break;
 
                 case "Menudo":
+                    txtDescripcion.Text = "Menudo";
                     txtPlanta.Text = "1519";
                     txtProducto.Text = "09";
                     txtTipoProducto.Text = "Trozado";
@@ -229,6 +261,7 @@ namespace demo_pollo
                     break;
 
                 case "Corazones":
+                    txtDescripcion.Text = "Corazones";
                     txtPlanta.Text = "1519";
                     txtProducto.Text = "10";
                     txtTipoProducto.Text = "Trozado";
@@ -238,6 +271,7 @@ namespace demo_pollo
                     break;
 
                 case "Garras":
+                    txtDescripcion.Text = "Garras";
                     txtPlanta.Text = "1519";
                     txtProducto.Text = "11";
                     txtTipoProducto.Text = "Trozado";
@@ -259,6 +293,43 @@ namespace demo_pollo
                 return true; // Indica que se procesó la tecla
             }
             return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+        private void customButton5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customButton7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customButton4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNumPad_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMas_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            // Crear una instancia del formulario que deseas abrir
+            FormMas Mas = new FormMas();
+
+            Mas.ShowDialog(); // Abre como ventana independiente
+
+            // Mostrar nuevamente el formulario principal después de cerrar el secundario
+            this.Show();
         }
     }
 

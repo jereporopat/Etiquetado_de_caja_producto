@@ -8,3 +8,13 @@ D:\Escritorio\Flutter\demo_pollo\demo_pollo\demo_pollo\obj\Debug\demo_pollo.cspr
 D:\Escritorio\Flutter\demo_pollo\demo_pollo\demo_pollo\obj\Debug\demo_pollo.csproj.CoreCompileInputs.cache
 D:\Escritorio\Flutter\demo_pollo\demo_pollo\demo_pollo\obj\Debug\demo_pollo.exe
 D:\Escritorio\Flutter\demo_pollo\demo_pollo\demo_pollo\obj\Debug\demo_pollo.pdb
+D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\demo_pollo\bin\Debug\demo_pollo.exe.config
+D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\demo_pollo\bin\Debug\demo_pollo.exe
+D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\demo_pollo\bin\Debug\demo_pollo.pdb
+D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\demo_pollo\obj\Debug\demo_pollo.csproj.AssemblyReference.cache
+D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\demo_pollo\obj\Debug\demo_pollo.Form1.resources
+D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\demo_pollo\obj\Debug\demo_pollo.Properties.Resources.resources
+D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\demo_pollo\obj\Debug\demo_pollo.csproj.GenerateResource.cache
+D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\demo_pollo\obj\Debug\demo_pollo.csproj.CoreCompileInputs.cache
+D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\demo_pollo\obj\Debug\demo_pollo.exe
+D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\demo_pollo\obj\Debug\demo_pollo.pdb

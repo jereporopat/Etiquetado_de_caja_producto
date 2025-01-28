@@ -162,9 +162,6 @@ namespace demo_pollo
                 }
             }
         }
-
-
-
         private void CargarDatosProducto(string producto)
         {
             // Llena los campos de datos según el producto seleccionado
@@ -217,6 +214,7 @@ namespace demo_pollo
                     txtTipoProducto.Text = "Trozado";
                     txtConservacion.Text = "Refrigerado";
                     txtGrado.Text = "1";
+                    txtCalibre.Text = "00";
                     txtRepeticion.Text = "0007";
                     break;
 
@@ -227,6 +225,7 @@ namespace demo_pollo
                     txtTipoProducto.Text = "Trozado";
                     txtConservacion.Text = "Refrigerado";
                     txtGrado.Text = "2";
+                    txtCalibre.Text = "00";
                     txtRepeticion.Text = "0008";
                     break;
 
@@ -237,6 +236,7 @@ namespace demo_pollo
                     txtTipoProducto.Text = "Trozado";
                     txtConservacion.Text = "Congelado";
                     txtGrado.Text = "2";
+                    txtCalibre.Text = "00";
                     txtRepeticion.Text = "0009";
                     break;
 
@@ -282,7 +282,7 @@ namespace demo_pollo
             }
 
             // Limpia el calibre y genera el código actualizado
-            txtCalibre.Text = "";
+            txtCalibre.Text = "00";
             GenerarCodigo();
         }
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)

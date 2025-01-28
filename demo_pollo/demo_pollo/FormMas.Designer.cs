@@ -30,7 +30,7 @@
         {
             this.customButton4 = new demo_pollo.CustomButton();
             this.customButton3 = new demo_pollo.CustomButton();
-            this.customButton1 = new demo_pollo.CustomButton();
+            this.EtiNuevaBtn = new demo_pollo.CustomButton();
             this.customButton2 = new demo_pollo.CustomButton();
             this.SuspendLayout();
             // 
@@ -62,19 +62,20 @@
             this.customButton3.Text = "CONFIGURACION";
             this.customButton3.UseVisualStyleBackColor = false;
             // 
-            // customButton1
+            // EtiNuevaBtn
             // 
-            this.customButton1.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.customButton1.FlatAppearance.BorderSize = 0;
-            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customButton1.ForeColor = System.Drawing.Color.White;
-            this.customButton1.Location = new System.Drawing.Point(87, 12);
-            this.customButton1.Name = "customButton1";
-            this.customButton1.Size = new System.Drawing.Size(508, 330);
-            this.customButton1.TabIndex = 2;
-            this.customButton1.Text = "ETIQUETA NUEVA";
-            this.customButton1.UseVisualStyleBackColor = false;
+            this.EtiNuevaBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.EtiNuevaBtn.FlatAppearance.BorderSize = 0;
+            this.EtiNuevaBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.EtiNuevaBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EtiNuevaBtn.ForeColor = System.Drawing.Color.White;
+            this.EtiNuevaBtn.Location = new System.Drawing.Point(87, 12);
+            this.EtiNuevaBtn.Name = "EtiNuevaBtn";
+            this.EtiNuevaBtn.Size = new System.Drawing.Size(508, 330);
+            this.EtiNuevaBtn.TabIndex = 2;
+            this.EtiNuevaBtn.Text = "ETIQUETA NUEVA";
+            this.EtiNuevaBtn.UseVisualStyleBackColor = false;
+            this.EtiNuevaBtn.Click += new System.EventHandler(this.EtiNuevaBtn_Click);
             // 
             // customButton2
             // 
@@ -97,7 +98,7 @@
             this.ClientSize = new System.Drawing.Size(1353, 668);
             this.Controls.Add(this.customButton4);
             this.Controls.Add(this.customButton3);
-            this.Controls.Add(this.customButton1);
+            this.Controls.Add(this.EtiNuevaBtn);
             this.Controls.Add(this.customButton2);
             this.Name = "FormMas";
             this.Text = "FormMas";
@@ -107,7 +108,7 @@
 
         #endregion
         private CustomButton customButton2;
-        private CustomButton customButton1;
+        private CustomButton EtiNuevaBtn;
         private CustomButton customButton3;
         private CustomButton customButton4;
     }

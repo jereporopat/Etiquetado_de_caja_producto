@@ -1,0 +1,221 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|d:\\visual studio c#\\san andr\u00E9s\\pollos\\etiqcajaprod\\demo_pollo\\altaproductofrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\altaproductofrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\abmproductosfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\abmproductosfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\editdeletefrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\editdeletefrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|d:\\visual studio c#\\san andr\u00E9s\\pollos\\etiqcajaprod\\demo_pollo\\altaproductofrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\altaproductofrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\abmproductosfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\abmproductosfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\editdeletefrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\editdeletefrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\custombutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\custombutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|d:\\visual studio c#\\san andr\u00E9s\\pollos\\etiqcajaprod\\demo_pollo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|demo_pollo||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\custombutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\custombutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|d:\\visual studio c#\\san andr\u00E9s\\pollos\\etiqcajaprod\\demo_pollo\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AltaProductoFrm.cs",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\AltaProductoFrm.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\AltaProductoFrm.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\AltaProductoFrm.cs",
+              "RelativeToolTip": "demo_pollo\\AltaProductoFrm.cs",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAwwJIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T14:03:29.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Main.cs",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\Main.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\Main.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\Main.cs",
+              "RelativeToolTip": "demo_pollo\\Main.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAQwFUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T19:52:19.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\Program.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\Program.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\Program.cs",
+              "RelativeToolTip": "demo_pollo\\Program.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwB4AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T01:14:43.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CustomButton.cs",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\CustomButton.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\CustomButton.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\CustomButton.cs",
+              "RelativeToolTip": "demo_pollo\\CustomButton.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB0AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T12:38:46.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CustomButton.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\CustomButton.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\CustomButton.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\CustomButton.cs [Dise\u00F1o]",
+              "RelativeToolTip": "demo_pollo\\CustomButton.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T12:37:59.176Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EditDeleteFrm.cs",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\EditDeleteFrm.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\EditDeleteFrm.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\EditDeleteFrm.cs",
+              "RelativeToolTip": "demo_pollo\\EditDeleteFrm.cs",
+              "ViewState": "AQIAAF4BAAAAAAAAAAAwwGcBAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T03:17:51.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EditDeleteFrm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\EditDeleteFrm.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\EditDeleteFrm.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\EditDeleteFrm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "demo_pollo\\EditDeleteFrm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T03:16:54.528Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AbmProductosFrm.cs",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\AbmProductosFrm.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\AbmProductosFrm.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\AbmProductosFrm.cs",
+              "RelativeToolTip": "demo_pollo\\AbmProductosFrm.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAIwEEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T03:16:46.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AbmProductosFrm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\AbmProductosFrm.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\AbmProductosFrm.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\AbmProductosFrm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "demo_pollo\\AbmProductosFrm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T03:16:28.718Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AltaProductoFrm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\AltaProductoFrm.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\AltaProductoFrm.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\AltaProductoFrm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "demo_pollo\\AltaProductoFrm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T03:16:25.974Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "demo_pollo",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\demo_pollo.csproj",
+              "RelativeDocumentMoniker": "demo_pollo\\demo_pollo.csproj",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\demo_pollo.csproj",
+              "RelativeToolTip": "demo_pollo\\demo_pollo.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-16T02:18:39.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Main.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\Main.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\Main.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\Pollos\\EtiqCajaProd\\demo_pollo\\Main.cs [Dise\u00F1o]",
+              "RelativeToolTip": "demo_pollo\\Main.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T13:15:45.944Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

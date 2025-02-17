@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="_Db_pollosDataSet" targetNamespace="http://tempuri.org/_Db_pollosDataSet1.xsd" xmlns:mstns="http://tempuri.org/_Db_pollosDataSet1.xsd" xmlns="http://tempuri.org/_Db_pollosDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Db_pollosConnectionString1" IsAppSettingsProperty="true" Modifier="Assembly" Name="Db_pollosConnectionString1 (Settings)" PropertyReference="ApplicationSettings.EtiqCajaProd.Properties.Settings.GlobalReference.Default.Db_pollosConnectionString1" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CalibreTableAdapter" GeneratorDataComponentClassName="CalibreTableAdapter" Name="Calibre" UserDataComponentName="CalibreTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Db_pollosConnectionString1 (Settings)" DbObjectName="Calibre" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id_calibre, calibre FROM Calibre</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Etiquetas_impresasTableAdapter" GeneratorDataComponentClassName="Etiquetas_impresasTableAdapter" Name="Etiquetas_impresas" UserDataComponentName="Etiquetas_impresasTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Db_pollosConnectionString1 (Settings)" DbObjectName="Etiquetas_impresas" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id_etiqueta, fecha_hora, id_producto, id_calibre FROM Etiquetas_impresas</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ProductoTableAdapter" GeneratorDataComponentClassName="ProductoTableAdapter" Name="Producto" UserDataComponentName="ProductoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Db_pollosConnectionString1 (Settings)" DbObjectName="Producto" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id_producto, descripcion, tipo_producto, conservacion, grado, codigo_producto, planta, repeticion, habilitado FROM Producto</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Producto_x_CalibreTableAdapter" GeneratorDataComponentClassName="Producto_x_CalibreTableAdapter" Name="Producto_x_Calibre" UserDataComponentName="Producto_x_CalibreTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Db_pollosConnectionString1 (Settings)" DbObjectName="Producto_x_Calibre" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, id_producto, id_calibre FROM Producto_x_Calibre</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="_Db_pollosDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="_Db_pollosDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_Db_pollosDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Calibre" msprop:Generator_RowClassName="CalibreRow" msprop:Generator_RowEvHandlerName="CalibreRowChangeEventHandler" msprop:Generator_RowDeletedName="CalibreRowDeleted" msprop:Generator_RowDeletingName="CalibreRowDeleting" msprop:Generator_RowEvArgName="CalibreRowChangeEvent" msprop:Generator_TablePropName="Calibre" msprop:Generator_RowChangedName="CalibreRowChanged" msprop:Generator_UserTableName="Calibre" msprop:Generator_RowChangingName="CalibreRowChanging" msprop:Generator_TableClassName="CalibreDataTable" msprop:Generator_TableVarName="tableCalibre">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Etiquetas_impresas" msprop:Generator_RowClassName="Etiquetas_impresasRow" msprop:Generator_RowEvHandlerName="Etiquetas_impresasRowChangeEventHandler" msprop:Generator_RowDeletedName="Etiquetas_impresasRowDeleted" msprop:Generator_RowDeletingName="Etiquetas_impresasRowDeleting" msprop:Generator_RowEvArgName="Etiquetas_impresasRowChangeEvent" msprop:Generator_TablePropName="Etiquetas_impresas" msprop:Generator_RowChangedName="Etiquetas_impresasRowChanged" msprop:Generator_UserTableName="Etiquetas_impresas" msprop:Generator_RowChangingName="Etiquetas_impresasRowChanging" msprop:Generator_TableClassName="Etiquetas_impresasDataTable" msprop:Generator_TableVarName="tableEtiquetas_impresas">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Producto" msprop:Generator_RowClassName="ProductoRow" msprop:Generator_RowEvHandlerName="ProductoRowChangeEventHandler" msprop:Generator_RowDeletedName="ProductoRowDeleted" msprop:Generator_RowDeletingName="ProductoRowDeleting" msprop:Generator_RowEvArgName="ProductoRowChangeEvent" msprop:Generator_TablePropName="Producto" msprop:Generator_RowChangedName="ProductoRowChanged" msprop:Generator_UserTableName="Producto" msprop:Generator_RowChangingName="ProductoRowChanging" msprop:Generator_TableClassName="ProductoDataTable" msprop:Generator_TableVarName="tableProducto">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Producto_x_Calibre" msprop:Generator_RowClassName="Producto_x_CalibreRow" msprop:Generator_RowEvHandlerName="Producto_x_CalibreRowChangeEventHandler" msprop:Generator_RowDeletedName="Producto_x_CalibreRowDeleted" msprop:Generator_RowDeletingName="Producto_x_CalibreRowDeleting" msprop:Generator_RowEvArgName="Producto_x_CalibreRowChangeEvent" msprop:Generator_TablePropName="Producto_x_Calibre" msprop:Generator_RowChangedName="Producto_x_CalibreRowChanged" msprop:Generator_UserTableName="Producto_x_Calibre" msprop:Generator_RowChangingName="Producto_x_CalibreRowChanging" msprop:Generator_TableClassName="Producto_x_CalibreDataTable" msprop:Generator_TableVarName="tableProducto_x_Calibre">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

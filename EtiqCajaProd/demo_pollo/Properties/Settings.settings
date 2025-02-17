@@ -1,0 +1,35 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="demo_pollo.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="IP_Zebra" Type="System.String" Scope="User">
+      <Value Profile="(Default)">192.168.0.245</Value>
+    </Setting>
+    <Setting Name="Mask_Z" Type="System.String" Scope="User">
+      <Value Profile="(Default)">255.255.255.000</Value>
+    </Setting>
+    <Setting Name="Ruta_ZD" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Program Files\Zebra Technologies\ZebraDesigner 3\bin.net</Value>
+    </Setting>
+    <Setting Name="Ult_Etq" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ETQ1</Value>
+    </Setting>
+    <Setting Name="Db_pollosConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\bin\Debug\Db.pollos.accdb&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\bin\Debug\Db.pollos.accdb</Value>
+    </Setting>
+    <Setting Name="senasa1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">000</Value>
+    </Setting>
+    <Setting Name="senasa2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00000</Value>
+    </Setting>
+    <Setting Name="senasa3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">000</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

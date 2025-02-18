@@ -55,8 +55,8 @@ namespace demo_pollo
                     conexion.Open();
 
                     // Consulta SQL para insertar los datos
-                    string query = "INSERT INTO Producto (descripcion, codigo_producto, planta, tipo_producto, conservacion, grado, repeticion, habilitado) " +
-                                    "VALUES (@descripcion, @codigo_producto, @planta, @tipo_producto, @conservacion, @grado, @repeticion, @habilitado)";
+                    string query = "INSERT INTO Producto (descripcion, codigo_producto, planta, tipo_producto, conservacion, grado, repeticion, habilitado, pathEtiqueta) " +
+                                    "VALUES (@descripcion, @codigo_producto, @planta, @tipo_producto, @conservacion, @grado, @repeticion, @habilitado, @pathEtiqueta)";
 
                     using (OleDbCommand comando = new OleDbCommand(query, conexion))
                     {
@@ -69,6 +69,7 @@ namespace demo_pollo
                         comando.Parameters.AddWithValue("@grado", grado);
                         comando.Parameters.AddWithValue("@repeticion", txtRepeticion.Text);
                         comando.Parameters.AddWithValue("@habilitado", true);
+                        comando.Parameters.AddWithValue("@pathEtiqueta", textPathEtiqueta.Text);
 
                         // Ejecutar la consulta
                         int filasAfectadas = comando.ExecuteNonQuery();
@@ -144,7 +145,7 @@ namespace demo_pollo
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                ;
+                textPathEtiqueta.Text = openFileDialog1.FileName;
             }
         }
     }

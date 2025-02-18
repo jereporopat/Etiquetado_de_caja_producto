@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Diagnostics.Eventing.Reader;
+using demo_pollo.Compartidos;
 
 
 namespace demo_pollo
@@ -32,12 +33,12 @@ namespace demo_pollo
 
         //Agregar para tener TRIAL
         private bool _Trial;
-        /*
+        
         public Main(bool IsTrial)
 
         {
             InitializeComponent();
-            this.CargarProductos();
+            this.CargarProductosActivos();
             this.CargarBotonesProducto();
             this.CargarBotonesCalibre();
 
@@ -46,6 +47,7 @@ namespace demo_pollo
             this.MaximumSize = SystemInformation.PrimaryMonitorMaximizedWindowSize;
             this.WindowState = FormWindowState.Maximized;
 
+            /*
             if (IsTrial == false)
             {
                 lblTrial.Text = "FULL";
@@ -59,9 +61,9 @@ namespace demo_pollo
             }
 
             _Trial = IsTrial;
-
+            */
         }
-        */
+        
 
 
         // No trial
@@ -71,11 +73,6 @@ namespace demo_pollo
         {
             InitializeComponent();
 
-            this.CargarProductos();
-            this.CargarBotonesProducto();
-            this.CargarBotonesCalibre();
-
-            CargarProductosEnBotonesProducto();
 
             this.MaximumSize = SystemInformation.PrimaryMonitorMaximizedWindowSize;
             this.WindowState = FormWindowState.Maximized;
@@ -151,114 +148,19 @@ namespace demo_pollo
             }
         }
 
-        private void CargarProductos()
+        private void CargarProductosActivos()
         {
-            productos = new List<Producto>();
-
-            try
-            {
-                using (OleDbConnection conexion = new OleDbConnection(cadena))
-                {
-                    conexion.Open();
-                    string consulta = "SELECT * FROM Producto";
-                    using (OleDbCommand comando = new OleDbCommand(consulta, conexion))
-                    using (OleDbDataReader lector = comando.ExecuteReader())
-                    {
-                        while (lector.Read())
-                        {
-                            string id_producto = lector["id_producto"].ToString();
-
-                            // Obtener los calibres en una NUEVA conexión
-                            List<string> calibres = ObtenerCalibres(id_producto);
-
-                            productos.Add(new Producto(
-                                    int.Parse(id_producto),
-                                    lector["descripcion"].ToString(),
-                                    lector["codigo_producto"].ToString(),
-                                    int.Parse(lector["tipo_producto"].ToString()),
-                                    int.Parse(lector["conservacion"].ToString()),
-                                    int.Parse(lector["grado"].ToString()),
-                                    lector["repeticion"].ToString(),
-                                    int.Parse(lector["planta"].ToString()),
-                                    bool.Parse(lector["habilitado"].ToString()),
-                                    lector["pathEtiqueta"].ToString(),
-                                    calibres
-                                  
-                                )
-                            );
-                        }
-                    }
-                    conexion.Close();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al cargar productos: " + ex.Message);
-            }
+            productos = BBDD.BuscarProductos().FindAll(p => p.getHabilitado());
         }
 
-        // Método separado para obtener los calibres usando una nueva conexión
-        private List<string> ObtenerCalibres(string id_producto)
-        {
-            List<string> calibres = new List<string>();
-
-            using (OleDbConnection nuevaConexion = new OleDbConnection(cadena))
-            {
-                nuevaConexion.Open();
-                string consultaCalibres =
-                    "SELECT C.calibre " +
-                    "FROM Calibre AS C " +
-                    "INNER JOIN Producto_x_Calibre AS PC ON C.id_calibre = PC.id_calibre " +
-                    "WHERE PC.id_producto = ?";
-
-                using (OleDbCommand comandoCalibres = new OleDbCommand(consultaCalibres, nuevaConexion))
-                {
-                    comandoCalibres.Parameters.AddWithValue("?", id_producto);
-                    using (OleDbDataReader lectorCalibres = comandoCalibres.ExecuteReader())
-                    {
-                        while (lectorCalibres.Read())
-                        {
-                            calibres.Add(lectorCalibres["calibre"].ToString());
-                        }
-                    }
-                }
-             nuevaConexion.Close() ;
-            }
-            return calibres;
-        }
         private void Form1_Load(object sender, EventArgs e)
         {
+
+            CargarProductosActivos();
+            CargarBotonesProducto();
+            CargarBotonesCalibre();
+            CargarProductosEnBotonesProducto();
             DesactivarBotones();
-            filePath = settings.Ult_Etq;
-            try
-            {
-                using (OleDbConnection conexion = new OleDbConnection(cadena))
-                {
-                    conexion.Open();
-                    string consulta = "SELECT descripcion FROM Producto WHERE codigo_producto = '02'";
-
-                    using (OleDbCommand comando = new OleDbCommand(consulta, conexion))
-                    using (OleDbDataReader lector = comando.ExecuteReader())
-                    {
-                        while (lector.Read())
-                        {
-                            listBoxItems.Items.Add(lector["descripcion"].ToString()); // Agregar nombres al ListBox
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al cargar productos: " + ex.Message);
-            }
-
-            // Recupera la última etiqueta utilizada
-            if (!string.IsNullOrEmpty(settings.Ult_Etq))
-            {
-
-                filePath = settings.Ult_Etq;
-            }
-
         }
 
         //busqueda etq
@@ -706,58 +608,4 @@ namespace demo_pollo
         }
     }
 }
-
-    public class Producto
-    {
-        private int id;
-
-        private string descripcion;
-
-        private string codigo_producto;
-
-        private int tipo_producto;
-
-        private int conservacion;
-
-        private int grado;
-
-        private string repeticion;
-
-        private int planta;
-
-        private bool habilitado;
-
-        private List<string> calibres;
-
-        private String pathEtiqueta;
-
-
-        public Producto(int id, string descripcion, string codigo_producto, int tipo_producto, int conservacion, int grado, string repeticion, int planta, bool habilitado,String pathEtiqueta , List<string> calibres)
-        {
-            this.id = id;
-            this.descripcion = descripcion;
-            this.codigo_producto = codigo_producto;
-            this.tipo_producto = tipo_producto;
-            this.conservacion = conservacion;
-            this.grado = grado;
-            this.repeticion = repeticion;
-            this.planta = planta;
-            this.habilitado = habilitado;
-            this.pathEtiqueta = pathEtiqueta;
-            this.calibres = calibres;
-        }
-
-        public int getId() { return id; }
-        public string getDescripcion() { return descripcion; }
-        public string getCodigoProducto() { return codigo_producto; }
-        public int getTipoProducto() {return tipo_producto;}
-        public int getConservacion() {return conservacion;}
-        public int getGrado() {return grado;}
-        public string getRepeticion() {return repeticion;}
-        public int getPlanta() {return planta;}
-        public bool gethabilitado() { return habilitado;}
-
-        public String getPathEtiqueta () {return pathEtiqueta;}
-        public List<string> getCalibres() { return calibres;}
-    }
   

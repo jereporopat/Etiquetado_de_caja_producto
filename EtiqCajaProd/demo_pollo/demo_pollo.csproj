@@ -257,6 +257,7 @@
     <Compile Include="AbmProductosFrm.Designer.cs">
       <DependentUpon>AbmProductosFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Compartidos\BBDD.cs" />
     <Compile Include="Config.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -284,6 +285,7 @@
     <Compile Include="MasFrm.Designer.cs">
       <DependentUpon>MasFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Compartidos\Producto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />

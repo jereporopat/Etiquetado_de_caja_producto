@@ -1,72 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\esalvano\\Desktop\\emi\\Repos\\C#\\demo_pollos\\EtiqCajaProd\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|c:\\users\\esalvano\\desktop\\emi\\repos\\c#\\demo_pollos\\etiqcajaprod\\demo_pollo\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|c:\\users\\esalvano\\desktop\\emi\\repos\\c#\\demo_pollos\\etiqcajaprod\\demo_pollo\\compartidos\\bbdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\compartidos\\bbdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|C:\\Users\\esalvano\\Desktop\\emi\\Repos\\C#\\demo_pollos\\EtiqCajaProd\\demo_pollo\\compartidos\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\compartidos\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Main.cs",
-              "DocumentMoniker": "C:\\Users\\esalvano\\Desktop\\emi\\Repos\\C#\\demo_pollos\\EtiqCajaProd\\demo_pollo\\Main.cs",
-              "RelativeDocumentMoniker": "demo_pollo\\Main.cs",
-              "ToolTip": "C:\\Users\\esalvano\\Desktop\\emi\\Repos\\C#\\demo_pollos\\EtiqCajaProd\\demo_pollo\\Main.cs",
-              "RelativeToolTip": "demo_pollo\\Main.cs",
-              "ViewState": "AgIAACkBAAAAAAAAAAAAADoBAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T12:35:09.847Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BBDD.cs",
-              "DocumentMoniker": "C:\\Users\\esalvano\\Desktop\\emi\\Repos\\C#\\demo_pollos\\EtiqCajaProd\\demo_pollo\\Compartidos\\BBDD.cs",
-              "RelativeDocumentMoniker": "demo_pollo\\Compartidos\\BBDD.cs",
-              "ToolTip": "C:\\Users\\esalvano\\Desktop\\emi\\Repos\\C#\\demo_pollos\\EtiqCajaProd\\demo_pollo\\Compartidos\\BBDD.cs",
-              "RelativeToolTip": "demo_pollo\\Compartidos\\BBDD.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAQwGkAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T12:41:13.693Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Producto.cs",
-              "DocumentMoniker": "C:\\Users\\esalvano\\Desktop\\emi\\Repos\\C#\\demo_pollos\\EtiqCajaProd\\demo_pollo\\Compartidos\\Producto.cs",
-              "RelativeDocumentMoniker": "demo_pollo\\Compartidos\\Producto.cs",
-              "ToolTip": "C:\\Users\\esalvano\\Desktop\\emi\\Repos\\C#\\demo_pollos\\EtiqCajaProd\\demo_pollo\\Compartidos\\Producto.cs",
-              "RelativeToolTip": "demo_pollo\\Compartidos\\Producto.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAswD8AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T19:09:47.998Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

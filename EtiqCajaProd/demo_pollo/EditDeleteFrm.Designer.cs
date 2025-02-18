@@ -40,15 +40,6 @@
             this.descripcionTb = new System.Windows.Forms.TextBox();
             this.plantaLbl = new System.Windows.Forms.Label();
             this.plantaTb = new System.Windows.Forms.TextBox();
-            this.tipoProductoGb = new System.Windows.Forms.GroupBox();
-            this.chkTipo2 = new System.Windows.Forms.CheckBox();
-            this.chkTipo1 = new System.Windows.Forms.CheckBox();
-            this.conservacionGb = new System.Windows.Forms.GroupBox();
-            this.chkConservacion2 = new System.Windows.Forms.CheckBox();
-            this.chkConservacion1 = new System.Windows.Forms.CheckBox();
-            this.gradoGb = new System.Windows.Forms.GroupBox();
-            this.chkGrado2 = new System.Windows.Forms.CheckBox();
-            this.chkGrado1 = new System.Windows.Forms.CheckBox();
             this.repeticionLbl = new System.Windows.Forms.Label();
             this.repeticionTb = new System.Windows.Forms.TextBox();
             this.cancelarBtn = new System.Windows.Forms.Button();
@@ -57,11 +48,17 @@
             this.btnEtiqueta = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.textPathEtiqueta = new System.Windows.Forms.TextBox();
+            this.tipoProductoCb = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.conservacionCb = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.gradoCb = new System.Windows.Forms.ComboBox();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.productoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._Db_pollosDataSet)).BeginInit();
-            this.tipoProductoGb.SuspendLayout();
-            this.conservacionGb.SuspendLayout();
-            this.gradoGb.SuspendLayout();
             this.SuspendLayout();
             // 
             // EditDeleteLb
@@ -69,7 +66,7 @@
             this.EditDeleteLb.FormattingEnabled = true;
             this.EditDeleteLb.Location = new System.Drawing.Point(10, 29);
             this.EditDeleteLb.Name = "EditDeleteLb";
-            this.EditDeleteLb.Size = new System.Drawing.Size(732, 381);
+            this.EditDeleteLb.Size = new System.Drawing.Size(853, 381);
             this.EditDeleteLb.TabIndex = 0;
             // 
             // productoBindingSource
@@ -91,7 +88,7 @@
             this.datosLb.FormattingEnabled = true;
             this.datosLb.Location = new System.Drawing.Point(24, 41);
             this.datosLb.Name = "datosLb";
-            this.datosLb.Size = new System.Drawing.Size(241, 342);
+            this.datosLb.Size = new System.Drawing.Size(241, 355);
             this.datosLb.TabIndex = 1;
             this.datosLb.SelectedIndexChanged += new System.EventHandler(this.DatosLb_SelectedIndexChanged);
             // 
@@ -107,7 +104,7 @@
             // descripcionLbl
             // 
             this.descripcionLbl.AutoSize = true;
-            this.descripcionLbl.Location = new System.Drawing.Point(294, 133);
+            this.descripcionLbl.Location = new System.Drawing.Point(294, 85);
             this.descripcionLbl.Name = "descripcionLbl";
             this.descripcionLbl.Size = new System.Drawing.Size(80, 13);
             this.descripcionLbl.TabIndex = 3;
@@ -115,14 +112,14 @@
             // 
             // codigoDeProductoTb
             // 
-            this.codigoDeProductoTb.Location = new System.Drawing.Point(297, 85);
+            this.codigoDeProductoTb.Location = new System.Drawing.Point(444, 50);
             this.codigoDeProductoTb.Name = "codigoDeProductoTb";
             this.codigoDeProductoTb.Size = new System.Drawing.Size(100, 20);
             this.codigoDeProductoTb.TabIndex = 4;
             // 
             // descripcionTb
             // 
-            this.descripcionTb.Location = new System.Drawing.Point(297, 162);
+            this.descripcionTb.Location = new System.Drawing.Point(444, 85);
             this.descripcionTb.Name = "descripcionTb";
             this.descripcionTb.Size = new System.Drawing.Size(100, 20);
             this.descripcionTb.TabIndex = 5;
@@ -130,7 +127,7 @@
             // plantaLbl
             // 
             this.plantaLbl.AutoSize = true;
-            this.plantaLbl.Location = new System.Drawing.Point(294, 207);
+            this.plantaLbl.Location = new System.Drawing.Point(293, 151);
             this.plantaLbl.Name = "plantaLbl";
             this.plantaLbl.Size = new System.Drawing.Size(49, 13);
             this.plantaLbl.TabIndex = 6;
@@ -138,108 +135,15 @@
             // 
             // plantaTb
             // 
-            this.plantaTb.Location = new System.Drawing.Point(297, 238);
+            this.plantaTb.Location = new System.Drawing.Point(444, 151);
             this.plantaTb.Name = "plantaTb";
             this.plantaTb.Size = new System.Drawing.Size(100, 20);
             this.plantaTb.TabIndex = 7;
             // 
-            // tipoProductoGb
-            // 
-            this.tipoProductoGb.Controls.Add(this.chkTipo2);
-            this.tipoProductoGb.Controls.Add(this.chkTipo1);
-            this.tipoProductoGb.Location = new System.Drawing.Point(446, 50);
-            this.tipoProductoGb.Name = "tipoProductoGb";
-            this.tipoProductoGb.Size = new System.Drawing.Size(137, 67);
-            this.tipoProductoGb.TabIndex = 9;
-            this.tipoProductoGb.TabStop = false;
-            this.tipoProductoGb.Text = "TIPO DE PRODUCTO";
-            // 
-            // chkTipo2
-            // 
-            this.chkTipo2.AutoSize = true;
-            this.chkTipo2.Location = new System.Drawing.Point(16, 42);
-            this.chkTipo2.Name = "chkTipo2";
-            this.chkTipo2.Size = new System.Drawing.Size(32, 17);
-            this.chkTipo2.TabIndex = 1;
-            this.chkTipo2.Text = "2";
-            this.chkTipo2.UseVisualStyleBackColor = true;
-            // 
-            // chkTipo1
-            // 
-            this.chkTipo1.AutoSize = true;
-            this.chkTipo1.Location = new System.Drawing.Point(16, 19);
-            this.chkTipo1.Name = "chkTipo1";
-            this.chkTipo1.Size = new System.Drawing.Size(32, 17);
-            this.chkTipo1.TabIndex = 0;
-            this.chkTipo1.Text = "1";
-            this.chkTipo1.UseVisualStyleBackColor = true;
-            // 
-            // conservacionGb
-            // 
-            this.conservacionGb.Controls.Add(this.chkConservacion2);
-            this.conservacionGb.Controls.Add(this.chkConservacion1);
-            this.conservacionGb.Location = new System.Drawing.Point(446, 133);
-            this.conservacionGb.Name = "conservacionGb";
-            this.conservacionGb.Size = new System.Drawing.Size(137, 67);
-            this.conservacionGb.TabIndex = 10;
-            this.conservacionGb.TabStop = false;
-            this.conservacionGb.Text = "CONSERVACION";
-            // 
-            // chkConservacion2
-            // 
-            this.chkConservacion2.AutoSize = true;
-            this.chkConservacion2.Location = new System.Drawing.Point(16, 42);
-            this.chkConservacion2.Name = "chkConservacion2";
-            this.chkConservacion2.Size = new System.Drawing.Size(32, 17);
-            this.chkConservacion2.TabIndex = 1;
-            this.chkConservacion2.Text = "2";
-            this.chkConservacion2.UseVisualStyleBackColor = true;
-            // 
-            // chkConservacion1
-            // 
-            this.chkConservacion1.AutoSize = true;
-            this.chkConservacion1.Location = new System.Drawing.Point(16, 19);
-            this.chkConservacion1.Name = "chkConservacion1";
-            this.chkConservacion1.Size = new System.Drawing.Size(32, 17);
-            this.chkConservacion1.TabIndex = 0;
-            this.chkConservacion1.Text = "1";
-            this.chkConservacion1.UseVisualStyleBackColor = true;
-            // 
-            // gradoGb
-            // 
-            this.gradoGb.Controls.Add(this.chkGrado2);
-            this.gradoGb.Controls.Add(this.chkGrado1);
-            this.gradoGb.Location = new System.Drawing.Point(446, 220);
-            this.gradoGb.Name = "gradoGb";
-            this.gradoGb.Size = new System.Drawing.Size(137, 67);
-            this.gradoGb.TabIndex = 11;
-            this.gradoGb.TabStop = false;
-            this.gradoGb.Text = "GRADO";
-            // 
-            // chkGrado2
-            // 
-            this.chkGrado2.AutoSize = true;
-            this.chkGrado2.Location = new System.Drawing.Point(16, 42);
-            this.chkGrado2.Name = "chkGrado2";
-            this.chkGrado2.Size = new System.Drawing.Size(32, 17);
-            this.chkGrado2.TabIndex = 1;
-            this.chkGrado2.Text = "2";
-            this.chkGrado2.UseVisualStyleBackColor = true;
-            // 
-            // chkGrado1
-            // 
-            this.chkGrado1.AutoSize = true;
-            this.chkGrado1.Location = new System.Drawing.Point(16, 19);
-            this.chkGrado1.Name = "chkGrado1";
-            this.chkGrado1.Size = new System.Drawing.Size(32, 17);
-            this.chkGrado1.TabIndex = 0;
-            this.chkGrado1.Text = "1";
-            this.chkGrado1.UseVisualStyleBackColor = true;
-            // 
             // repeticionLbl
             // 
             this.repeticionLbl.AutoSize = true;
-            this.repeticionLbl.Location = new System.Drawing.Point(612, 50);
+            this.repeticionLbl.Location = new System.Drawing.Point(293, 120);
             this.repeticionLbl.Name = "repeticionLbl";
             this.repeticionLbl.Size = new System.Drawing.Size(72, 13);
             this.repeticionLbl.TabIndex = 12;
@@ -247,14 +151,14 @@
             // 
             // repeticionTb
             // 
-            this.repeticionTb.Location = new System.Drawing.Point(614, 78);
+            this.repeticionTb.Location = new System.Drawing.Point(444, 120);
             this.repeticionTb.Name = "repeticionTb";
             this.repeticionTb.Size = new System.Drawing.Size(100, 20);
             this.repeticionTb.TabIndex = 13;
             // 
             // cancelarBtn
             // 
-            this.cancelarBtn.Location = new System.Drawing.Point(296, 338);
+            this.cancelarBtn.Location = new System.Drawing.Point(296, 352);
             this.cancelarBtn.Name = "cancelarBtn";
             this.cancelarBtn.Size = new System.Drawing.Size(118, 44);
             this.cancelarBtn.TabIndex = 14;
@@ -264,7 +168,7 @@
             // 
             // guardarBtn
             // 
-            this.guardarBtn.Location = new System.Drawing.Point(446, 338);
+            this.guardarBtn.Location = new System.Drawing.Point(446, 352);
             this.guardarBtn.Name = "guardarBtn";
             this.guardarBtn.Size = new System.Drawing.Size(119, 44);
             this.guardarBtn.TabIndex = 15;
@@ -276,7 +180,7 @@
             // 
             this.eliminarBtn.BackColor = System.Drawing.Color.Red;
             this.eliminarBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.eliminarBtn.Location = new System.Drawing.Point(611, 338);
+            this.eliminarBtn.Location = new System.Drawing.Point(723, 352);
             this.eliminarBtn.Name = "eliminarBtn";
             this.eliminarBtn.Size = new System.Drawing.Size(112, 44);
             this.eliminarBtn.TabIndex = 16;
@@ -287,12 +191,12 @@
             // btnEtiqueta
             // 
             this.btnEtiqueta.BackColor = System.Drawing.Color.DarkOrange;
-            this.btnEtiqueta.Location = new System.Drawing.Point(614, 133);
+            this.btnEtiqueta.Location = new System.Drawing.Point(765, 287);
             this.btnEtiqueta.Margin = new System.Windows.Forms.Padding(2);
             this.btnEtiqueta.Name = "btnEtiqueta";
-            this.btnEtiqueta.Size = new System.Drawing.Size(69, 30);
+            this.btnEtiqueta.Size = new System.Drawing.Size(70, 57);
             this.btnEtiqueta.TabIndex = 17;
-            this.btnEtiqueta.Text = "ETIQUETA";
+            this.btnEtiqueta.Text = "BUSCAR ETIQUETA";
             this.btnEtiqueta.UseVisualStyleBackColor = false;
             this.btnEtiqueta.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -303,19 +207,105 @@
             // textPathEtiqueta
             // 
             this.textPathEtiqueta.AllowDrop = true;
-            this.textPathEtiqueta.Location = new System.Drawing.Point(614, 176);
+            this.textPathEtiqueta.Location = new System.Drawing.Point(444, 287);
             this.textPathEtiqueta.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textPathEtiqueta.Multiline = true;
             this.textPathEtiqueta.Name = "textPathEtiqueta";
             this.textPathEtiqueta.ReadOnly = true;
-            this.textPathEtiqueta.Size = new System.Drawing.Size(110, 112);
+            this.textPathEtiqueta.Size = new System.Drawing.Size(315, 57);
             this.textPathEtiqueta.TabIndex = 19;
+            // 
+            // tipoProductoCb
+            // 
+            this.tipoProductoCb.FormattingEnabled = true;
+            this.tipoProductoCb.Location = new System.Drawing.Point(444, 177);
+            this.tipoProductoCb.Name = "tipoProductoCb";
+            this.tipoProductoCb.Size = new System.Drawing.Size(121, 21);
+            this.tipoProductoCb.TabIndex = 20;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(293, 177);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(114, 13);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "TIPO DE PRODUCTO";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(293, 211);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(92, 13);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "CONSERVACION";
+            // 
+            // conservacionCb
+            // 
+            this.conservacionCb.FormattingEnabled = true;
+            this.conservacionCb.Location = new System.Drawing.Point(444, 211);
+            this.conservacionCb.Name = "conservacionCb";
+            this.conservacionCb.Size = new System.Drawing.Size(121, 21);
+            this.conservacionCb.TabIndex = 22;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(293, 249);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 13);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "GRADO";
+            // 
+            // gradoCb
+            // 
+            this.gradoCb.FormattingEnabled = true;
+            this.gradoCb.Location = new System.Drawing.Point(444, 249);
+            this.gradoCb.Name = "gradoCb";
+            this.gradoCb.Size = new System.Drawing.Size(121, 21);
+            this.gradoCb.TabIndex = 24;
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(723, 50);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(112, 229);
+            this.checkedListBox1.TabIndex = 26;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(293, 287);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(94, 13);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "RUTA ETIQUETA";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(658, 50);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(59, 13);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "CALIBRES";
             // 
             // EditDeleteFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(753, 420);
+            this.ClientSize = new System.Drawing.Size(875, 420);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.gradoCb);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.conservacionCb);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tipoProductoCb);
             this.Controls.Add(this.textPathEtiqueta);
             this.Controls.Add(this.btnEtiqueta);
             this.Controls.Add(this.eliminarBtn);
@@ -323,9 +313,6 @@
             this.Controls.Add(this.cancelarBtn);
             this.Controls.Add(this.repeticionTb);
             this.Controls.Add(this.repeticionLbl);
-            this.Controls.Add(this.gradoGb);
-            this.Controls.Add(this.conservacionGb);
-            this.Controls.Add(this.tipoProductoGb);
             this.Controls.Add(this.plantaTb);
             this.Controls.Add(this.plantaLbl);
             this.Controls.Add(this.descripcionTb);
@@ -339,12 +326,6 @@
             this.Text = "Editar / Deshabilitar";
             ((System.ComponentModel.ISupportInitialize)(this.productoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._Db_pollosDataSet)).EndInit();
-            this.tipoProductoGb.ResumeLayout(false);
-            this.tipoProductoGb.PerformLayout();
-            this.conservacionGb.ResumeLayout(false);
-            this.conservacionGb.PerformLayout();
-            this.gradoGb.ResumeLayout(false);
-            this.gradoGb.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -363,15 +344,6 @@
         private System.Windows.Forms.TextBox descripcionTb;
         private System.Windows.Forms.Label plantaLbl;
         private System.Windows.Forms.TextBox plantaTb;
-        private System.Windows.Forms.GroupBox tipoProductoGb;
-        private System.Windows.Forms.CheckBox chkTipo2;
-        private System.Windows.Forms.CheckBox chkTipo1;
-        private System.Windows.Forms.GroupBox conservacionGb;
-        private System.Windows.Forms.CheckBox chkConservacion2;
-        private System.Windows.Forms.CheckBox chkConservacion1;
-        private System.Windows.Forms.GroupBox gradoGb;
-        private System.Windows.Forms.CheckBox chkGrado2;
-        private System.Windows.Forms.CheckBox chkGrado1;
         private System.Windows.Forms.Label repeticionLbl;
         private System.Windows.Forms.TextBox repeticionTb;
         private System.Windows.Forms.Button cancelarBtn;
@@ -380,5 +352,14 @@
         private System.Windows.Forms.Button btnEtiqueta;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.TextBox textPathEtiqueta;
+        private System.Windows.Forms.ComboBox tipoProductoCb;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox conservacionCb;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox gradoCb;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

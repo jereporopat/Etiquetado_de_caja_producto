@@ -8,23 +8,34 @@ namespace demo_pollo
 {
     public partial class EditDeleteFrm : Form
     {
-        string filePath="";
         List<Producto> products = new List<Producto>();
 
         string cadena = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Application.StartupPath + "\\Db.pollos.accdb";
+        
         public EditDeleteFrm()
         {
             InitializeComponent();
             CargarProductosEnListBox();
+            CargarListadosDeComboBox();
         }
+
+        private void CargarListadosDeComboBox()
+        {
+            CargarComboBox(tipoProductoCb, "Tipo_de_producto");
+            CargarComboBox(conservacionCb, "conservacion");
+            CargarComboBox(gradoCb, "grado");
+        }
+
+        private void CargarComboBox(ComboBox comboBox, String tabla)
+        {
+            comboBox.DataSource = new BindingSource(BBDD.ObtenerDiccionarioDeOpciones(tabla), null);
+            comboBox.DisplayMember = "value";
+            comboBox.ValueMember = "key";
+        }
+
         private void CargarProductosEnListBox()
         {
-            List<Producto> productos = BBDD.BuscarProductos();
-
-            foreach (Producto producto in productos)
-            {
-                datosLb.Items.Add(producto);
-            }
+            datosLb.DataSource = BBDD.BuscarProductos();
         }
 
         private void DatosLb_SelectedIndexChanged(object sender, EventArgs e)
@@ -48,24 +59,17 @@ namespace demo_pollo
                 return;
             }
 
-            //Validar campos de texto
+            //Validar campos
             if (string.IsNullOrWhiteSpace(codigoDeProductoTb.Text) ||
                 string.IsNullOrWhiteSpace(descripcionTb.Text) ||
                 string.IsNullOrWhiteSpace(codigoDeProductoTb.Text) ||
                 string.IsNullOrWhiteSpace(plantaTb.Text) ||
-                string.IsNullOrWhiteSpace(repeticionTb.Text))
+                string.IsNullOrWhiteSpace(repeticionTb.Text) ||
+                tipoProductoCb.SelectedItem == null ||
+                conservacionCb.SelectedItem == null ||
+                gradoCb.SelectedItem == null)
             {
                 MessageBox.Show("Por favor, complete todos los campos.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-
-            if (!ValidarSeleccionUnica(conservacionGb) ||
-                !ValidarSeleccionUnica(gradoGb) ||
-                !ValidarSeleccionUnica(tipoProductoGb))
-            {
-                MessageBox.Show("Debe seleccionar una única opción en cada categoría (Conservación, Grado y Tipo de Producto).",
-                                "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -75,33 +79,17 @@ namespace demo_pollo
             productoSeleccionado.setPlanta(int.Parse(plantaTb.Text));
             productoSeleccionado.setRepeticion(repeticionTb.Text);
             productoSeleccionado.setCodigoProducto(codigoDeProductoTb.Text);
+            productoSeleccionado.setPathEtiqueta(textPathEtiqueta.Text);
 
-            // Determinamos los valores según los checkboxes
-            productoSeleccionado.setTipoProducto(chkTipo1.Checked ? 1 : chkTipo2.Checked ? 2 : 0);
-            productoSeleccionado.setConservacion(chkConservacion1.Checked ? 1 : chkConservacion2.Checked ? 2 : 0);
-            productoSeleccionado.setGrado(chkGrado1.Checked ? 1 : chkGrado2.Checked ? 2 : 0);
-
-            // Asignamos la etiqueta
-            productoSeleccionado.setPathEtiqueta(filePath);
+            productoSeleccionado.setTipoProducto((int)tipoProductoCb.SelectedValue);
+            productoSeleccionado.setConservacion((int)conservacionCb.SelectedValue);
+            productoSeleccionado.setGrado((int)gradoCb.SelectedValue);
 
             BBDD.ActualizarProducto(productoSeleccionado);
 
-
+            datosLb.Refresh();
         }
 
-
-        private bool ValidarSeleccionUnica(GroupBox groupBox)
-        {
-            int seleccionados = 0;
-            foreach (Control control in groupBox.Controls)
-            {
-                if (control is CheckBox checkBox && checkBox.Checked)
-                {
-                    seleccionados++;
-                }
-            }
-            return seleccionados == 1; // Solo debe haber uno seleccionado
-        }
 
         private void CargarDatosProducto(Producto producto)
         {
@@ -111,25 +99,10 @@ namespace demo_pollo
             plantaTb.Text = producto.getPlanta().ToString();
             repeticionTb.Text = producto.getRepeticion();
 
-            // Limpiar los CheckBoxes antes de marcar los correspondientes
-            chkTipo1.Checked = false;
-            chkTipo2.Checked = false;
-            chkConservacion1.Checked = false;
-            chkConservacion2.Checked = false;
-            chkGrado1.Checked = false;
-            chkGrado2.Checked = false;
-
-            // Asignar valores a los CheckBoxes
-            int tipoProducto = producto.getTipoProducto();
-            int conservacion = producto.getConservacion();
-            int grado = producto.getGrado();
-
-            chkTipo1.Checked = (tipoProducto == 1);
-            chkTipo2.Checked = (tipoProducto == 2);
-            chkConservacion1.Checked = (conservacion == 1);
-            chkConservacion2.Checked = (conservacion == 2);
-            chkGrado1.Checked = (grado == 1);
-            chkGrado2.Checked = (grado == 2);
+            // Asignar valores a los ComboBox
+            tipoProductoCb.SelectedValue = producto.getTipoProducto();
+            conservacionCb.SelectedValue = producto.getConservacion();
+            gradoCb.SelectedValue = producto.getGrado();
 
             textPathEtiqueta.Text = producto.getPathEtiqueta();
         }
@@ -194,22 +167,15 @@ namespace demo_pollo
             descripcionTb.Clear();
             plantaTb.Clear();
             repeticionTb.Clear();
-            chkTipo1.Checked = false;
-            chkTipo2.Checked = false;
-            chkConservacion1.Checked = false;
-            chkConservacion2.Checked = false;
-            chkGrado1.Checked = false;
-            chkGrado2.Checked = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
            
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)  
-                {
-                    filePath = openFileDialog1.FileName;
-                    textPathEtiqueta.Text = filePath;
-                }
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                    textPathEtiqueta.Text = openFileDialog1.FileName;
+            }
         }
     }
 }

@@ -6,6 +6,7 @@ using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Input;
 
 namespace demo_pollo.Compartidos
 {
@@ -29,7 +30,7 @@ namespace demo_pollo.Compartidos
                     {
                         while (lector.Read())
                         {
-                            string id_producto = lector["id_producto"].ToString();
+                            string id_producto = lector["id"].ToString();
 
                             // Obtener los calibres en una NUEVA conexión
                             List<string> calibres = ObtenerCalibres(id_producto);
@@ -71,9 +72,9 @@ namespace demo_pollo.Compartidos
             {
                 nuevaConexion.Open();
                 string consultaCalibres =
-                    "SELECT C.calibre " +
+                    "SELECT C.descripcion " +
                     "FROM Calibre AS C " +
-                    "INNER JOIN Producto_x_Calibre AS PC ON C.id_calibre = PC.id_calibre " +
+                    "INNER JOIN Producto_x_Calibre AS PC ON C.id = PC.id_calibre " +
                     "WHERE PC.id_producto = @id_producto";
 
                 using (OleDbCommand comandoCalibres = new OleDbCommand(consultaCalibres, nuevaConexion))
@@ -83,7 +84,7 @@ namespace demo_pollo.Compartidos
                     {
                         while (lectorCalibres.Read())
                         {
-                            calibres.Add(lectorCalibres["calibre"].ToString());
+                            calibres.Add(lectorCalibres["descripcion"].ToString());
                         }
                     }
                 }
@@ -104,7 +105,7 @@ namespace demo_pollo.Compartidos
                     grado = @grado,
                     codigo_producto = @codigoProducto,
                     pathEtiqueta = @pathEtiqueta
-                WHERE id_producto = @id_producto";
+                WHERE id = @id_producto";
 
             try
             {
@@ -144,7 +145,35 @@ namespace demo_pollo.Compartidos
             {
                 MessageBox.Show("Error al actualizar el producto: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
 
+        public static Dictionary<int, String> ObtenerDiccionarioDeOpciones(string tabla)
+        {
+            Dictionary<int, String> diccionarioDeOpciones = new Dictionary<int, String>();
+
+            using (OleDbConnection nuevaConexion = new OleDbConnection(cadena))
+            {
+                nuevaConexion.Open();
+                string consultaCalibres =
+                    "SELECT T.id, T.descripcion " +
+                    $"FROM {tabla} AS T";
+
+                using (OleDbCommand comandoCalibres = new OleDbCommand(consultaCalibres, nuevaConexion))
+                {
+                    using (OleDbDataReader lectorCalibres = comandoCalibres.ExecuteReader())
+                    {
+                        while (lectorCalibres.Read())
+                        {
+                            diccionarioDeOpciones.Add(
+                                int.Parse (lectorCalibres["id"].ToString())
+                                , lectorCalibres["descripcion"].ToString()
+                                );
+                        }
+                    }
+                }
+                nuevaConexion.Close();
+            }
+            return diccionarioDeOpciones;
         }
     }
 }

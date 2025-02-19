@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\esalvano\\Desktop\\emi\\Repos\\C#\\demo_pollos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|c:\\users\\esalvano\\desktop\\emi\\repos\\c#\\demo_pollos\\demo_pollo\\editdeletefrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\editdeletefrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|c:\\users\\esalvano\\desktop\\emi\\repos\\c#\\demo_pollos\\demo_pollo\\editdeletefrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\editdeletefrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EditDeleteFrm.cs",
+              "DocumentMoniker": "C:\\Users\\esalvano\\Desktop\\emi\\Repos\\C#\\demo_pollos\\demo_pollo\\EditDeleteFrm.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\EditDeleteFrm.cs",
+              "ToolTip": "C:\\Users\\esalvano\\Desktop\\emi\\Repos\\C#\\demo_pollos\\demo_pollo\\EditDeleteFrm.cs",
+              "RelativeToolTip": "demo_pollo\\EditDeleteFrm.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAASwG4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T17:06:02.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EditDeleteFrm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\esalvano\\Desktop\\emi\\Repos\\C#\\demo_pollos\\demo_pollo\\EditDeleteFrm.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\EditDeleteFrm.cs",
+              "ToolTip": "C:\\Users\\esalvano\\Desktop\\emi\\Repos\\C#\\demo_pollos\\demo_pollo\\EditDeleteFrm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "demo_pollo\\EditDeleteFrm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T14:12:05.706Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

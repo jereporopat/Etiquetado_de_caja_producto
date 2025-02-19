@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.EditDeleteLb = new System.Windows.Forms.ListBox();
             this.productoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this._Db_pollosDataSet = new demo_pollo._Db_pollosDataSet();
-            this.productoTableAdapter = new demo_pollo._Db_pollosDataSetTableAdapters.ProductoTableAdapter();
             this.datosLb = new System.Windows.Forms.ListBox();
             this.codigoProductoLbl = new System.Windows.Forms.Label();
             this.descripcionLbl = new System.Windows.Forms.Label();
@@ -54,11 +52,9 @@
             this.conservacionCb = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.gradoCb = new System.Windows.Forms.ComboBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.productoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._Db_pollosDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // EditDeleteLb
@@ -68,20 +64,6 @@
             this.EditDeleteLb.Name = "EditDeleteLb";
             this.EditDeleteLb.Size = new System.Drawing.Size(853, 381);
             this.EditDeleteLb.TabIndex = 0;
-            // 
-            // productoBindingSource
-            // 
-            this.productoBindingSource.DataMember = "Producto";
-            this.productoBindingSource.DataSource = this._Db_pollosDataSet;
-            // 
-            // _Db_pollosDataSet
-            // 
-            this._Db_pollosDataSet.DataSetName = "_Db_pollosDataSet";
-            this._Db_pollosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // productoTableAdapter
-            // 
-            this.productoTableAdapter.ClearBeforeFill = true;
             // 
             // datosLb
             // 
@@ -266,14 +248,6 @@
             this.gradoCb.Size = new System.Drawing.Size(121, 21);
             this.gradoCb.TabIndex = 24;
             // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(723, 50);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(112, 229);
-            this.checkedListBox1.TabIndex = 26;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -299,7 +273,6 @@
             this.ClientSize = new System.Drawing.Size(875, 420);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.gradoCb);
             this.Controls.Add(this.label2);
@@ -325,7 +298,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Editar / Deshabilitar";
             ((System.ComponentModel.ISupportInitialize)(this.productoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._Db_pollosDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -334,9 +306,7 @@
         #endregion
 
         private System.Windows.Forms.ListBox EditDeleteLb;
-        private _Db_pollosDataSet _Db_pollosDataSet;
         private System.Windows.Forms.BindingSource productoBindingSource;
-        private _Db_pollosDataSetTableAdapters.ProductoTableAdapter productoTableAdapter;
         private System.Windows.Forms.ListBox datosLb;
         private System.Windows.Forms.Label codigoProductoLbl;
         private System.Windows.Forms.Label descripcionLbl;
@@ -358,7 +328,6 @@
         private System.Windows.Forms.ComboBox conservacionCb;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox gradoCb;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
     }

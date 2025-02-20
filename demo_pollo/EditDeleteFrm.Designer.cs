@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.EditDeleteLb = new System.Windows.Forms.ListBox();
             this.datosLb = new System.Windows.Forms.ListBox();
             this.codigoProductoLbl = new System.Windows.Forms.Label();
@@ -39,7 +38,7 @@
             this.plantaTb = new System.Windows.Forms.TextBox();
             this.repeticionLbl = new System.Windows.Forms.Label();
             this.repeticionTb = new System.Windows.Forms.TextBox();
-            this.cancelarBtn = new System.Windows.Forms.Button();
+            this.salirBtn = new System.Windows.Forms.Button();
             this.guardarBtn = new System.Windows.Forms.Button();
             this.eliminarBtn = new System.Windows.Forms.Button();
             this.btnEtiqueta = new System.Windows.Forms.Button();
@@ -55,9 +54,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.calibresLb = new System.Windows.Forms.ListBox();
             this.removerBtn = new System.Windows.Forms.Button();
-            this.agregarBtn = new System.Windows.Forms.Button();
-            this.productoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.productoBindingSource)).BeginInit();
+            this.agregarCalibreBtn = new System.Windows.Forms.Button();
+            this.agregarProductoBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // EditDeleteLb
@@ -73,7 +71,8 @@
             this.datosLb.FormattingEnabled = true;
             this.datosLb.Location = new System.Drawing.Point(24, 41);
             this.datosLb.Name = "datosLb";
-            this.datosLb.Size = new System.Drawing.Size(241, 355);
+            this.datosLb.Size = new System.Drawing.Size(241, 251);
+            this.datosLb.Sorted = true;
             this.datosLb.TabIndex = 1;
             this.datosLb.SelectedIndexChanged += new System.EventHandler(this.DatosLb_SelectedIndexChanged);
             // 
@@ -141,31 +140,35 @@
             this.repeticionTb.Size = new System.Drawing.Size(100, 20);
             this.repeticionTb.TabIndex = 13;
             // 
-            // cancelarBtn
+            // salirBtn
             // 
-            this.cancelarBtn.Location = new System.Drawing.Point(296, 352);
-            this.cancelarBtn.Name = "cancelarBtn";
-            this.cancelarBtn.Size = new System.Drawing.Size(118, 44);
-            this.cancelarBtn.TabIndex = 14;
-            this.cancelarBtn.Text = "CANCELAR";
-            this.cancelarBtn.UseVisualStyleBackColor = true;
-            this.cancelarBtn.Click += new System.EventHandler(this.CancelarBtn_Click);
+            this.salirBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salirBtn.Location = new System.Drawing.Point(730, 352);
+            this.salirBtn.Name = "salirBtn";
+            this.salirBtn.Size = new System.Drawing.Size(118, 44);
+            this.salirBtn.TabIndex = 14;
+            this.salirBtn.Text = "SALIR";
+            this.salirBtn.UseVisualStyleBackColor = true;
+            this.salirBtn.Click += new System.EventHandler(this.CancelarBtn_Click);
             // 
             // guardarBtn
             // 
-            this.guardarBtn.Location = new System.Drawing.Point(446, 352);
+            this.guardarBtn.BackColor = System.Drawing.Color.RoyalBlue;
+            this.guardarBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guardarBtn.Location = new System.Drawing.Point(598, 352);
             this.guardarBtn.Name = "guardarBtn";
             this.guardarBtn.Size = new System.Drawing.Size(119, 44);
             this.guardarBtn.TabIndex = 15;
             this.guardarBtn.Text = "GUARDAR";
-            this.guardarBtn.UseVisualStyleBackColor = true;
+            this.guardarBtn.UseVisualStyleBackColor = false;
             this.guardarBtn.Click += new System.EventHandler(this.GuardarBtn_Click);
             // 
             // eliminarBtn
             // 
             this.eliminarBtn.BackColor = System.Drawing.Color.Red;
+            this.eliminarBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eliminarBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.eliminarBtn.Location = new System.Drawing.Point(723, 352);
+            this.eliminarBtn.Location = new System.Drawing.Point(153, 300);
             this.eliminarBtn.Name = "eliminarBtn";
             this.eliminarBtn.Size = new System.Drawing.Size(112, 44);
             this.eliminarBtn.TabIndex = 16;
@@ -176,7 +179,7 @@
             // btnEtiqueta
             // 
             this.btnEtiqueta.BackColor = System.Drawing.Color.DarkOrange;
-            this.btnEtiqueta.Location = new System.Drawing.Point(765, 287);
+            this.btnEtiqueta.Location = new System.Drawing.Point(778, 287);
             this.btnEtiqueta.Margin = new System.Windows.Forms.Padding(2);
             this.btnEtiqueta.Name = "btnEtiqueta";
             this.btnEtiqueta.Size = new System.Drawing.Size(70, 57);
@@ -197,7 +200,7 @@
             this.textPathEtiqueta.Multiline = true;
             this.textPathEtiqueta.Name = "textPathEtiqueta";
             this.textPathEtiqueta.ReadOnly = true;
-            this.textPathEtiqueta.Size = new System.Drawing.Size(315, 57);
+            this.textPathEtiqueta.Size = new System.Drawing.Size(328, 57);
             this.textPathEtiqueta.TabIndex = 19;
             // 
             // tipoProductoCb
@@ -285,24 +288,37 @@
             this.removerBtn.TabIndex = 30;
             this.removerBtn.Text = "REMOVER";
             this.removerBtn.UseVisualStyleBackColor = true;
-            this.removerBtn.Click += new System.EventHandler(this.removerBtn_Click);
+            this.removerBtn.Click += new System.EventHandler(this.removerCalibreBtn_Click);
             // 
-            // agregarBtn
+            // agregarCalibreBtn
             // 
-            this.agregarBtn.Location = new System.Drawing.Point(723, 197);
-            this.agregarBtn.Name = "agregarBtn";
-            this.agregarBtn.Size = new System.Drawing.Size(125, 28);
-            this.agregarBtn.TabIndex = 31;
-            this.agregarBtn.Text = "AGREGAR";
-            this.agregarBtn.UseVisualStyleBackColor = true;
-            this.agregarBtn.Click += new System.EventHandler(this.agregarBtn_Click);
+            this.agregarCalibreBtn.Location = new System.Drawing.Point(723, 197);
+            this.agregarCalibreBtn.Name = "agregarCalibreBtn";
+            this.agregarCalibreBtn.Size = new System.Drawing.Size(125, 28);
+            this.agregarCalibreBtn.TabIndex = 31;
+            this.agregarCalibreBtn.Text = "AGREGAR";
+            this.agregarCalibreBtn.UseVisualStyleBackColor = true;
+            this.agregarCalibreBtn.Click += new System.EventHandler(this.agregarCalibreBtn_Click);
+            // 
+            // agregarProductoBtn
+            // 
+            this.agregarProductoBtn.BackColor = System.Drawing.Color.LimeGreen;
+            this.agregarProductoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.agregarProductoBtn.Location = new System.Drawing.Point(24, 300);
+            this.agregarProductoBtn.Name = "agregarProductoBtn";
+            this.agregarProductoBtn.Size = new System.Drawing.Size(112, 44);
+            this.agregarProductoBtn.TabIndex = 32;
+            this.agregarProductoBtn.Text = "NUEVO";
+            this.agregarProductoBtn.UseVisualStyleBackColor = false;
+            this.agregarProductoBtn.Click += new System.EventHandler(this.agregarProductoBtn_Click);
             // 
             // EditDeleteFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(875, 420);
-            this.Controls.Add(this.agregarBtn);
+            this.Controls.Add(this.agregarProductoBtn);
+            this.Controls.Add(this.agregarCalibreBtn);
             this.Controls.Add(this.removerBtn);
             this.Controls.Add(this.calibresLb);
             this.Controls.Add(this.label5);
@@ -317,7 +333,7 @@
             this.Controls.Add(this.btnEtiqueta);
             this.Controls.Add(this.eliminarBtn);
             this.Controls.Add(this.guardarBtn);
-            this.Controls.Add(this.cancelarBtn);
+            this.Controls.Add(this.salirBtn);
             this.Controls.Add(this.repeticionTb);
             this.Controls.Add(this.repeticionLbl);
             this.Controls.Add(this.plantaTb);
@@ -331,7 +347,6 @@
             this.Name = "EditDeleteFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Editar / Deshabilitar";
-            ((System.ComponentModel.ISupportInitialize)(this.productoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -340,7 +355,6 @@
         #endregion
 
         private System.Windows.Forms.ListBox EditDeleteLb;
-        private System.Windows.Forms.BindingSource productoBindingSource;
         private System.Windows.Forms.ListBox datosLb;
         private System.Windows.Forms.Label codigoProductoLbl;
         private System.Windows.Forms.Label descripcionLbl;
@@ -350,7 +364,7 @@
         private System.Windows.Forms.TextBox plantaTb;
         private System.Windows.Forms.Label repeticionLbl;
         private System.Windows.Forms.TextBox repeticionTb;
-        private System.Windows.Forms.Button cancelarBtn;
+        private System.Windows.Forms.Button salirBtn;
         private System.Windows.Forms.Button guardarBtn;
         private System.Windows.Forms.Button eliminarBtn;
         private System.Windows.Forms.Button btnEtiqueta;
@@ -366,6 +380,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ListBox calibresLb;
         private System.Windows.Forms.Button removerBtn;
-        private System.Windows.Forms.Button agregarBtn;
+        private System.Windows.Forms.Button agregarCalibreBtn;
+        private System.Windows.Forms.Button agregarProductoBtn;
     }
 }

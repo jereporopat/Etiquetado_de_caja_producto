@@ -97,8 +97,19 @@ namespace demo_pollo.Compartidos
             return calibres;
         }
 
+        public static void GuardarProducto(Producto producto)
+        {
+            if (producto.getId() != -1)
+            {
+                ActualizarProducto(producto);
+            }
+            else
+            {
+                AgregarProducto(producto);
+            }
+        }
 
-        public static void ActualizarProducto(Producto producto) {
+        private static void ActualizarProducto(Producto producto) {
 
             string query = @"UPDATE Producto 
                 SET descripcion = @descripcion, 
@@ -150,6 +161,49 @@ namespace demo_pollo.Compartidos
             catch (Exception ex)
             {
                 MessageBox.Show("Error al actualizar el producto: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+
+
+        public static void AgregarProducto(Producto producto)
+        {
+            string queryInsert = @"INSERT INTO Producto (descripcion, planta, repeticion, tipo_producto, conservacion, grado, pathEtiqueta) 
+                           VALUES (@descripcion, @planta, @repeticion, @tipoProducto, @conservacion, @grado, @pathEtiqueta);";
+
+            using (OleDbConnection connection = new OleDbConnection(cadenaDeConeccion))
+            {
+                try
+                {
+                    connection.Open();
+                    using (OleDbCommand command = new OleDbCommand(queryInsert, connection))
+                    {
+                        // Agregar parámetros
+                        command.Parameters.AddWithValue("@descripcion", producto.getDescripcion());
+                        command.Parameters.AddWithValue("@planta", producto.getPlanta());
+                        command.Parameters.AddWithValue("@repeticion", producto.getRepeticion());
+                        command.Parameters.AddWithValue("@tipoProducto", producto.getTipoProducto());
+                        command.Parameters.AddWithValue("@conservacion", producto.getConservacion());
+                        command.Parameters.AddWithValue("@grado", producto.getGrado());
+                        command.Parameters.AddWithValue("@pathEtiqueta", producto.getPathEtiqueta());
+
+                        // Ejecutar INSERT
+                        command.ExecuteNonQuery();
+
+                        // Recuperar el ID generado
+                        command.CommandText = "SELECT @@IDENTITY;";
+                        int nuevoId = Convert.ToInt32(command.ExecuteScalar());
+
+                        producto.setId(nuevoId);
+
+                        ActualizarCalibresDeProducto(producto);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al insertar producto: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 

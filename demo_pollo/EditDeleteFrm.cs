@@ -8,14 +8,15 @@ namespace demo_pollo
 {
     public partial class EditDeleteFrm : Form
     {
-        List<Producto> products = new List<Producto>();
+        List<Producto> productos;
+        Producto productoSeleccionado;
 
         string cadena = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Application.StartupPath + "\\Db.pollos.accdb";
         
         public EditDeleteFrm()
         {
             InitializeComponent();
-            CargarProductosEnListBox();
+            CargarListaDeProductos();
             CargarListadosDeComboBox();
         }
 
@@ -33,9 +34,10 @@ namespace demo_pollo
             comboBox.ValueMember = "key";
         }
 
-        private void CargarProductosEnListBox()
+        private void CargarListaDeProductos()
         {
-            datosLb.DataSource = BBDD.BuscarProductos();
+            productos = BBDD.BuscarProductos();
+            datosLb.DataSource = productos;
         }
 
         private void DatosLb_SelectedIndexChanged(object sender, EventArgs e)
@@ -43,7 +45,7 @@ namespace demo_pollo
             if (datosLb.SelectedItem != null)
             {
                 // Obtengo el producto seleccionado
-                Producto productoSeleccionado = (Producto)datosLb.SelectedItem;
+                productoSeleccionado = (Producto)datosLb.SelectedItem;
 
                 CargarDatosProducto(productoSeleccionado);
             }
@@ -51,8 +53,6 @@ namespace demo_pollo
 
         private void GuardarBtn_Click(object sender, EventArgs e)
         {
-            Producto productoSeleccionado = (Producto)datosLb.SelectedItem;
-
             if (productoSeleccionado == null)
             {
                 MessageBox.Show("Debe seleccionar un producto antes de guardar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -85,9 +85,9 @@ namespace demo_pollo
             productoSeleccionado.setConservacion((int)conservacionCb.SelectedValue);
             productoSeleccionado.setGrado((int)gradoCb.SelectedValue);
 
-            BBDD.ActualizarProducto(productoSeleccionado);
+            BBDD.GuardarProducto(productoSeleccionado);
 
-            datosLb.Refresh();
+            CargarListaDeProductos();
         }
 
 
@@ -106,10 +106,10 @@ namespace demo_pollo
 
             textPathEtiqueta.Text = producto.getPathEtiqueta();
 
-            CargarListBoxDeCalibres(producto);
+            CargarListaDeCalibres(producto);
         }
 
-        private void CargarListBoxDeCalibres(Producto producto)
+        private void CargarListaDeCalibres(Producto producto)
         {
             if (producto.getCalibres().Count > 0)
             {
@@ -125,7 +125,6 @@ namespace demo_pollo
 
         private void CancelarBtn_Click(object sender, EventArgs e)
         {
-            DialogResult = DialogResult.Cancel;
             Close();
         }
 
@@ -166,7 +165,7 @@ namespace demo_pollo
                             LimpiarFormulario();
 
                             // Recargar la lista de productos
-                            CargarProductosEnListBox();
+                            CargarListaDeProductos();
                         }
                     }
                     conexion.Close();
@@ -194,30 +193,38 @@ namespace demo_pollo
             }
         }
 
-        private void agregarBtn_Click(object sender, EventArgs e)
+        private void agregarCalibreBtn_Click(object sender, EventArgs e)
         {
-            Producto productoSeleccionado = (Producto)datosLb.SelectedItem;
-
-
             using (FormSeleccionCalibres formSeleccion = new FormSeleccionCalibres(productoSeleccionado.getCalibres()))
             {
                 if (formSeleccion.ShowDialog() == DialogResult.OK)
                 {
                     productoSeleccionado.setCalibres(formSeleccion.calibresSeleccionados);
-                    CargarListBoxDeCalibres(productoSeleccionado);
+                    CargarListaDeCalibres(productoSeleccionado);
                 }
             }
         }
 
-        private void removerBtn_Click(object sender, EventArgs e)
+        private void removerCalibreBtn_Click(object sender, EventArgs e)
         {
-            Producto productoSeleccionado = (Producto)datosLb.SelectedItem;
-
             KeyValuePair<int, string> calibre = (KeyValuePair<int, string>)calibresLb.SelectedItem;
 
             productoSeleccionado.getCalibres().Remove(calibre.Key);
 
-            CargarListBoxDeCalibres(productoSeleccionado);
+            CargarListaDeCalibres(productoSeleccionado);
+        }
+
+        private void agregarProductoBtn_Click(object sender, EventArgs e)
+        {
+            Producto nuevoProducto = new Producto();
+            nuevoProducto.setHabilitado(true);
+            nuevoProducto.setDescripcion("Nuevo producto");
+
+            productos.Add(nuevoProducto);
+
+            datosLb.ClearSelected();
+            productoSeleccionado = nuevoProducto;
+            CargarDatosProducto(productoSeleccionado);
         }
     }
 }

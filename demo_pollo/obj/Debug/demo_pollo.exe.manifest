@@ -67,14 +67,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="demo_pollo.exe" size="322520">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="demo_pollo.exe" size="324568">
       <assemblyIdentity name="demo_pollo" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>GB2yIUSkkGKGDexrIIMgUQUX9UwW6FfTRu9p0vdLcGE=</dsig:DigestValue>
+        <dsig:DigestValue>xV7l6thWfC8fmzX6JYxyaJhI05CZMI0ihxR2TQ8yLsU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

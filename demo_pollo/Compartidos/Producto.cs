@@ -41,6 +41,12 @@ public class Producto
         this.calibres = calibres;
     }
 
+    public Producto()
+    {
+        calibres = new Dictionary<int, string>();
+        this.id = -1;
+    }
+
     override public String ToString()
     {
         return this.codigo_producto + " - " + this.descripcion;
@@ -60,6 +66,8 @@ public class Producto
     public Dictionary<int, string> getCalibres() { return calibres; }
 
 
+
+    public void setId(int id) { this.id = id; }
     public void setDescripcion(string descripcion) { this.descripcion = descripcion; }
     public void setCodigoProducto(string codigo_producto) { this.codigo_producto = codigo_producto; }
     public void setTipoProducto(int tipo_producto) { this.tipo_producto = tipo_producto; }

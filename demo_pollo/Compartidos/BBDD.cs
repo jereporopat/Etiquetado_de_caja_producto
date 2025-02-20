@@ -118,6 +118,7 @@ namespace demo_pollo.Compartidos
                     tipo_producto = @tipoProducto, 
                     conservacion = @conservacion, 
                     grado = @grado,
+                    habilitado = @habilitado,
                     codigo_producto = @codigoProducto,
                     pathEtiqueta = @pathEtiqueta
                 WHERE id = @id_producto";
@@ -138,6 +139,7 @@ namespace demo_pollo.Compartidos
                         comando.Parameters.AddWithValue("@tipoProducto", producto.getTipoProducto());
                         comando.Parameters.AddWithValue("@conservacion", producto.getConservacion());
                         comando.Parameters.AddWithValue("@grado", producto.getGrado());
+                        comando.Parameters.AddWithValue("@habilitado", producto.getHabilitado());
                         comando.Parameters.AddWithValue("@codigoProducto", producto.getCodigoProducto());
                         comando.Parameters.AddWithValue("@pathEtiqueta", producto.getPathEtiqueta());
 
@@ -169,31 +171,33 @@ namespace demo_pollo.Compartidos
 
         public static void AgregarProducto(Producto producto)
         {
-            string queryInsert = @"INSERT INTO Producto (descripcion, planta, repeticion, tipo_producto, conservacion, grado, pathEtiqueta) 
-                           VALUES (@descripcion, @planta, @repeticion, @tipoProducto, @conservacion, @grado, @pathEtiqueta);";
+            string queryInsert = @"INSERT INTO Producto (descripcion, planta, repeticion, tipo_producto, conservacion, grado, habilitado, codigo_producto, pathEtiqueta) 
+                           VALUES (@descripcion, @planta, @repeticion, @tipoProducto, @conservacion, @grado, @habilitado, @codigo_producto, @pathEtiqueta);";
 
             using (OleDbConnection connection = new OleDbConnection(cadenaDeConeccion))
             {
                 try
                 {
                     connection.Open();
-                    using (OleDbCommand command = new OleDbCommand(queryInsert, connection))
+                    using (OleDbCommand comando = new OleDbCommand(queryInsert, connection))
                     {
                         // Agregar parámetros
-                        command.Parameters.AddWithValue("@descripcion", producto.getDescripcion());
-                        command.Parameters.AddWithValue("@planta", producto.getPlanta());
-                        command.Parameters.AddWithValue("@repeticion", producto.getRepeticion());
-                        command.Parameters.AddWithValue("@tipoProducto", producto.getTipoProducto());
-                        command.Parameters.AddWithValue("@conservacion", producto.getConservacion());
-                        command.Parameters.AddWithValue("@grado", producto.getGrado());
-                        command.Parameters.AddWithValue("@pathEtiqueta", producto.getPathEtiqueta());
+                        comando.Parameters.AddWithValue("@descripcion", producto.getDescripcion());
+                        comando.Parameters.AddWithValue("@planta", producto.getPlanta());
+                        comando.Parameters.AddWithValue("@repeticion", producto.getRepeticion());
+                        comando.Parameters.AddWithValue("@tipoProducto", producto.getTipoProducto());
+                        comando.Parameters.AddWithValue("@conservacion", producto.getConservacion());
+                        comando.Parameters.AddWithValue("@grado", producto.getGrado());
+                        comando.Parameters.AddWithValue("@habilitado", producto.getHabilitado());
+                        comando.Parameters.AddWithValue("@codigoProducto", producto.getCodigoProducto());
+                        comando.Parameters.AddWithValue("@pathEtiqueta", producto.getPathEtiqueta());
 
                         // Ejecutar INSERT
-                        command.ExecuteNonQuery();
+                        comando.ExecuteNonQuery();
 
                         // Recuperar el ID generado
-                        command.CommandText = "SELECT @@IDENTITY;";
-                        int nuevoId = Convert.ToInt32(command.ExecuteScalar());
+                        comando.CommandText = "SELECT @@IDENTITY;";
+                        int nuevoId = Convert.ToInt32(comando.ExecuteScalar());
 
                         producto.setId(nuevoId);
 

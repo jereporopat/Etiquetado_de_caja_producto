@@ -1,4 +1,6 @@
-﻿namespace demo_pollo
+﻿using System.Windows.Forms;
+
+namespace demo_pollo
 {
     partial class EditDeleteFrm
     {
@@ -40,7 +42,7 @@
             this.repeticionTb = new System.Windows.Forms.TextBox();
             this.salirBtn = new System.Windows.Forms.Button();
             this.guardarBtn = new System.Windows.Forms.Button();
-            this.eliminarBtn = new System.Windows.Forms.Button();
+            this.habilitacionBtn = new System.Windows.Forms.Button();
             this.btnEtiqueta = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.textPathEtiqueta = new System.Windows.Forms.TextBox();
@@ -68,12 +70,14 @@
             // 
             // datosLb
             // 
+            this.datosLb.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.datosLb.FormattingEnabled = true;
             this.datosLb.Location = new System.Drawing.Point(24, 41);
             this.datosLb.Name = "datosLb";
             this.datosLb.Size = new System.Drawing.Size(241, 251);
             this.datosLb.Sorted = true;
             this.datosLb.TabIndex = 1;
+            this.datosLb.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.datosLb_DrawItem);
             this.datosLb.SelectedIndexChanged += new System.EventHandler(this.DatosLb_SelectedIndexChanged);
             // 
             // codigoProductoLbl
@@ -163,18 +167,18 @@
             this.guardarBtn.UseVisualStyleBackColor = false;
             this.guardarBtn.Click += new System.EventHandler(this.GuardarBtn_Click);
             // 
-            // eliminarBtn
+            // habilitacionBtn
             // 
-            this.eliminarBtn.BackColor = System.Drawing.Color.Red;
-            this.eliminarBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.eliminarBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.eliminarBtn.Location = new System.Drawing.Point(153, 300);
-            this.eliminarBtn.Name = "eliminarBtn";
-            this.eliminarBtn.Size = new System.Drawing.Size(112, 44);
-            this.eliminarBtn.TabIndex = 16;
-            this.eliminarBtn.Text = "DESHABILITAR";
-            this.eliminarBtn.UseVisualStyleBackColor = false;
-            this.eliminarBtn.Click += new System.EventHandler(this.EliminarBtn_Click);
+            this.habilitacionBtn.BackColor = System.Drawing.Color.Red;
+            this.habilitacionBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.habilitacionBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.habilitacionBtn.Location = new System.Drawing.Point(153, 300);
+            this.habilitacionBtn.Name = "habilitacionBtn";
+            this.habilitacionBtn.Size = new System.Drawing.Size(112, 44);
+            this.habilitacionBtn.TabIndex = 16;
+            this.habilitacionBtn.Text = "DESHABILITAR";
+            this.habilitacionBtn.UseVisualStyleBackColor = false;
+            this.habilitacionBtn.Click += new System.EventHandler(this.EliminarBtn_Click);
             // 
             // btnEtiqueta
             // 
@@ -331,7 +335,7 @@
             this.Controls.Add(this.tipoProductoCb);
             this.Controls.Add(this.textPathEtiqueta);
             this.Controls.Add(this.btnEtiqueta);
-            this.Controls.Add(this.eliminarBtn);
+            this.Controls.Add(this.habilitacionBtn);
             this.Controls.Add(this.guardarBtn);
             this.Controls.Add(this.salirBtn);
             this.Controls.Add(this.repeticionTb);
@@ -366,7 +370,7 @@
         private System.Windows.Forms.TextBox repeticionTb;
         private System.Windows.Forms.Button salirBtn;
         private System.Windows.Forms.Button guardarBtn;
-        private System.Windows.Forms.Button eliminarBtn;
+        private System.Windows.Forms.Button habilitacionBtn;
         private System.Windows.Forms.Button btnEtiqueta;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.TextBox textPathEtiqueta;

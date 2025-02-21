@@ -299,5 +299,42 @@ namespace demo_pollo.Compartidos
             }
             return diccionarioDeOpciones;
         }
+
+
+
+        public static void ActualizarHabilitacionDeProducto(Producto producto)
+        {
+            int id_producto = producto.getId();
+            bool habilitado = producto.getHabilitado();
+
+            string query = @"UPDATE Producto 
+                     SET habilitado = @habilitado
+                     WHERE id = @id_producto";
+            try
+            {
+                using (OleDbConnection conexion = new OleDbConnection(cadenaDeConeccion))
+                {
+                    conexion.Open();
+                    using (OleDbCommand comando = new OleDbCommand(query, conexion))
+                    {
+                        comando.Parameters.AddWithValue("@habilitado", habilitado);
+                        comando.Parameters.AddWithValue("@id_producto", id_producto);
+
+                        // Ejecutar la consulta
+                        int filasAfectadas = comando.ExecuteNonQuery();
+
+                        if (filasAfectadas > 0)
+                        {
+                            MessageBox.Show("Producto actualizado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+                    conexion.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al actualizar el producto: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

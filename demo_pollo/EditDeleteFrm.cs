@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data.OleDb;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace demo_pollo
@@ -65,6 +66,7 @@ namespace demo_pollo
                 string.IsNullOrWhiteSpace(codigoDeProductoTb.Text) ||
                 string.IsNullOrWhiteSpace(plantaTb.Text) ||
                 string.IsNullOrWhiteSpace(repeticionTb.Text) ||
+                string.IsNullOrWhiteSpace(textPathEtiqueta.Text) ||
                 tipoProductoCb.SelectedItem == null ||
                 conservacionCb.SelectedItem == null ||
                 gradoCb.SelectedItem == null)
@@ -106,6 +108,8 @@ namespace demo_pollo
 
             textPathEtiqueta.Text = producto.getPathEtiqueta();
 
+            ModificarBotonHabilitado();
+
             CargarListaDeCalibres(producto);
         }
 
@@ -123,6 +127,20 @@ namespace demo_pollo
             }
         }
 
+        private void ModificarBotonHabilitado()
+        {
+            if (productoSeleccionado.getHabilitado())
+            {
+                habilitacionBtn.Text = "DESHABILITAR";
+                habilitacionBtn.BackColor = Color.Red;
+            }
+            else
+            {
+                habilitacionBtn.Text = "HABILITAR";
+                habilitacionBtn.BackColor = Color.Blue;
+            }
+        }
+
         private void CancelarBtn_Click(object sender, EventArgs e)
         {
             Close();
@@ -130,52 +148,11 @@ namespace demo_pollo
 
         private void EliminarBtn_Click(object sender, EventArgs e)
         {
-            // Validar que haya un producto seleccionado
-            if (string.IsNullOrWhiteSpace(codigoDeProductoTb.Text))
-            {
-                MessageBox.Show("Debe seleccionar un producto antes de eliminar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            string codigoProducto = codigoDeProductoTb.Text;
-            bool habilitado = false;
-
-            string query = @"UPDATE Producto 
-                     SET habilitado = @habilitado
-                     WHERE codigo_producto = @codigoProducto";
-            try
-            {
-                using (OleDbConnection conexion = new OleDbConnection(cadena))
-                {
-                    conexion.Open();
-                    using (OleDbCommand comando = new OleDbCommand(query, conexion))
-                    {
-                        // Agregar parámetros
-                        comando.Parameters.AddWithValue("@habilitado", habilitado);
-                        comando.Parameters.AddWithValue("@codigoProducto", codigoProducto);
-
-                        // Ejecutar la consulta
-                        int filasAfectadas = comando.ExecuteNonQuery();
-
-                        if (filasAfectadas > 0)
-                        {
-                            MessageBox.Show("Producto deshabilitado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                            // Limpiar los campos del formulario
-                            LimpiarFormulario();
-
-                            // Recargar la lista de productos
-                            CargarListaDeProductos();
-                        }
-                    }
-                    conexion.Close();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al deshabilitar el producto: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            productoSeleccionado.setHabilitado(!productoSeleccionado.getHabilitado());
+            BBDD.ActualizarHabilitacionDeProducto(productoSeleccionado);
+            CargarListaDeProductos();
         }
+
         private void LimpiarFormulario()
         {
             codigoDeProductoTb.Clear();
@@ -216,15 +193,44 @@ namespace demo_pollo
 
         private void agregarProductoBtn_Click(object sender, EventArgs e)
         {
-            Producto nuevoProducto = new Producto();
-            nuevoProducto.setHabilitado(true);
-            nuevoProducto.setDescripcion("Nuevo producto");
+            if(productos.FindAll(p => p.getHabilitado()).Count >= 15){
+                MessageBox.Show("No puede haber mas de 15 productos habilitados", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                Producto nuevoProducto = new Producto();
+                nuevoProducto.setHabilitado(true);
+                nuevoProducto.setDescripcion("Nuevo producto");
 
-            productos.Add(nuevoProducto);
+                productos.Add(nuevoProducto);
 
-            datosLb.ClearSelected();
-            productoSeleccionado = nuevoProducto;
-            CargarDatosProducto(productoSeleccionado);
+                datosLb.ClearSelected();
+                productoSeleccionado = nuevoProducto;
+                CargarDatosProducto(productoSeleccionado);
+            }
+        }
+
+        private void datosLb_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            if (e.Index < 0) return;
+
+            Producto producto = (Producto)datosLb.Items[e.Index];
+
+            // Detectar si el ítem está seleccionado
+            bool isSelected = (e.State & DrawItemState.Selected) == DrawItemState.Selected;
+
+            // Definir colores
+            Color backColor = isSelected ? SystemColors.Highlight : (producto.getHabilitado() ? Color.White : Color.Orange);
+            Color textColor = isSelected ? SystemColors.HighlightText : Color.Black;
+
+            // Dibujar fondo del ítem
+            e.Graphics.FillRectangle(new SolidBrush(backColor), e.Bounds);
+
+            // Dibujar texto del ítem
+            e.Graphics.DrawString(producto.getDescripcion(), e.Font, new SolidBrush(textColor), e.Bounds, StringFormat.GenericDefault);
+
+            // Dibujar borde si el elemento está seleccionado
+            e.DrawFocusRectangle();
         }
     }
 }

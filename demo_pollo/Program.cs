@@ -18,10 +18,9 @@ namespace demo_pollo
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //habilitar para trial
-            /*
+            
             TrialMaker t = new TrialMaker("EtqCajPro", Application.StartupPath + "\\RegFile.reg",
-                 // Environment.GetFolderPath(Environment.SpecialFolder.System) + "\\PESetp.dbf",
-                 "C:\\Users\\Public\\PESetp.dbf",
+                 Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "PESetp.dbf",
                 "TE: +(5411) 7079 7262 - (WA)+(5411) 7079 7262\ne-mail: info@siscod.com.ar - web: www.siscod.com",
                 30, 200, "123");
 
@@ -41,9 +40,9 @@ namespace demo_pollo
 
                 Application.Run(new Main(is_trial));
             }
-            */
+            
             //sacar para trial
-            Application.Run(new Main());
+            //Application.Run(new Main());
         }
     }
 }

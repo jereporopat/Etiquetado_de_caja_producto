@@ -41,13 +41,12 @@ namespace demo_pollo
             this.CargarProductosActivos();
             this.CargarBotonesProducto();
             this.CargarBotonesCalibre();
-
-            CargarProductosEnBotonesProducto();
+            
 
             this.MaximumSize = SystemInformation.PrimaryMonitorMaximizedWindowSize;
             this.WindowState = FormWindowState.Maximized;
 
-            /*
+            
             if (IsTrial == false)
             {
                 lblTrial.Text = "FULL";
@@ -61,14 +60,14 @@ namespace demo_pollo
             }
 
             _Trial = IsTrial;
-            */
+            
         }
         
 
 
         // No trial
         
-
+        /*
         public Main()
         {
             InitializeComponent();
@@ -77,9 +76,7 @@ namespace demo_pollo
             this.MaximumSize = SystemInformation.PrimaryMonitorMaximizedWindowSize;
             this.WindowState = FormWindowState.Maximized;
 
-            // filePath = settings.Ult_Etq;
-
-        }
+        }*/
         
 
         private void CargarProductosEnBotonesProducto()
@@ -89,6 +86,7 @@ namespace demo_pollo
                 botonesProducto[indice].SetProducto(producto);
                 botonesProducto[indice].Text = producto.getDescripcion();
                 botonesProducto[indice].BackColor = Color.CornflowerBlue;
+                botonesProducto[indice].Enabled = true;
                 indice++;
             }
         }
@@ -112,7 +110,12 @@ namespace demo_pollo
             botonesProducto[13] = customButton21;
             botonesProducto[14] = customButton22;
 
-            foreach(CustomButton boton in botonesProducto) { boton.BackColor = Color.Gray; }
+            foreach(CustomButton boton in botonesProducto) { 
+                boton.BackColor = Color.Gray;
+                boton.Enabled = false;
+            }
+
+            CargarProductosEnBotonesProducto();
         }
 
         private void CargarBotonesCalibre()
@@ -125,7 +128,7 @@ namespace demo_pollo
             botonesCalibre[4] = (customButton5);
             botonesCalibre[5] = (customButton7);
         }
-        private void DesactivarBotones() {
+        private void DesactivarBotonesDeCalibre() {
             foreach (Control boton in botonesCalibre)
             {
               //  boton.Text = "";
@@ -136,7 +139,7 @@ namespace demo_pollo
         }
         private void ActivarBotones(Producto producto)
         {
-            DesactivarBotones();
+            DesactivarBotonesDeCalibre();
             List<string> calibres = producto.getCalibres().Values.ToList();
             int indice = 0;
             foreach (string calibre in calibres)
@@ -164,7 +167,7 @@ namespace demo_pollo
             CargarBotonesProducto();
             CargarBotonesCalibre();
             CargarProductosEnBotonesProducto();
-            DesactivarBotones();
+            DesactivarBotonesDeCalibre();
         }
 
         //busqueda etq
@@ -246,10 +249,10 @@ namespace demo_pollo
 
                 ultimoBotonPresionadoCalibre = null;
 
-                BuscarProductoPorCodigo(btn.Text);
+                BuscarProductoPorCodigo();
             }
         }
-        private void BuscarProductoPorCodigo(string codigo)
+        private void BuscarProductoPorCodigo()
         {
             // Buscar en la lista de productos ya cargada
             Producto productoSeleccionado = ultimoBotonPresionado.GetProducto();

@@ -67,14 +67,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="demo_pollo.exe" size="326616">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="demo_pollo.exe" size="751576">
       <assemblyIdentity name="demo_pollo" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>X13Q6sFo205A9vJ5bOzQ/1+DRZNsCCmqILG6zWnbslo=</dsig:DigestValue>
+        <dsig:DigestValue>Tbj/hx/3reJVGBn2lg2t2U7XvUQRGXHGKH0vL8EAN+o=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -672,7 +672,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>poHop9Z8OTxlCHKt03GFol5Im+Mq6XsaEp4UIxLrI+4=</dsig:DigestValue>
+      <dsig:DigestValue>bHsf365KY3vmtBMaPLbKyVLMZWWjVO+IoG5nvBXz1T8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Microsoft.Data.SqlClient.SNI.x64.dll" size="501160">

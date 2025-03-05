@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.gbProducto = new System.Windows.Forms.GroupBox();
             this.customButton22 = new demo_pollo.CustomButton();
             this.customButton21 = new demo_pollo.CustomButton();
@@ -457,11 +458,16 @@
             // 
             // listBox1
             // 
+            this.listBox1.AllowDrop = true;
+            this.listBox1.CausesValidation = false;
             this.listBox1.FormattingEnabled = true;
+            this.listBox1.HorizontalScrollbar = true;
             this.listBox1.ItemHeight = 17;
-            this.listBox1.Location = new System.Drawing.Point(1127, 45);
+            this.listBox1.Location = new System.Drawing.Point(900, 45);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(225, 480);
+            this.listBox1.ScrollAlwaysVisible = true;
+            this.listBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.listBox1.Size = new System.Drawing.Size(452, 565);
             this.listBox1.TabIndex = 13;
             this.listBox1.Visible = false;
             // 
@@ -642,15 +648,16 @@
             this.ClientSize = new System.Drawing.Size(1366, 749);
             this.Controls.Add(this.lblTrial);
             this.Controls.Add(this.btnMas);
-            this.Controls.Add(this.gbCalibre);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.imprimirBtn);
             this.Controls.Add(this.btnTerminar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.gbProducto);
             this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.gbCalibre);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -694,7 +701,6 @@
         private CustomButton customButton3;
         private CustomButton customButton1;
         private CustomButton customButton7;
-        private System.Windows.Forms.ListBox listBox1;
         private CustomButton btnTerminar;
         private System.Windows.Forms.GroupBox groupBox3;
         private CustomButton imprimirBtn;
@@ -708,6 +714,7 @@
         private System.Windows.Forms.Label label1;
         private CustomButton btnMas;
         private System.Windows.Forms.Label lblTrial;
+        public System.Windows.Forms.ListBox listBox1;
     }
 }
 

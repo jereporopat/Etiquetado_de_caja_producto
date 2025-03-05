@@ -1,18 +1,112 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\esalvano\\Desktop\\emi\\Repos\\C#\\demo_pollos\\",
+  "WorkspaceRootPath": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|c:\\users\\esalvano\\desktop\\emi\\repos\\c#\\demo_pollos\\demo_pollo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|d:\\visual studio c#\\san andr\u00E9s\\demo_pollos\\demo_pollo\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|c:\\users\\esalvano\\desktop\\emi\\repos\\c#\\demo_pollos\\demo_pollo\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|c:\\users\\esalvano\\desktop\\emi\\repos\\c#\\demo_pollos\\demo_pollo\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\reporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\reporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Antonio\\AppData\\Local\\Temp\\.vsdbgsrc\\598bd126614fe8c9ccf4c26754918d5bbe5282c328cfa73c555ecc5dde791d90\\OleDbConnectionInternal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Antonio\\AppData\\Local\\Temp\\.vsdbgsrc\\43b18a559fca7f1fb264ce294eae943149e2103eb8763156ea27ca62fb7520b9\\OleDbConnectionFactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\masfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\masfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\masfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\masfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\compartidos\\bbdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\compartidos\\bbdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Antonio\\AppData\\Local\\Temp\\.vsdbgsrc\\8a70bd5d7448de2acb062824353556d9165f14a2d72fd1d02912236ebf1da895\\OleDbCommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\altaproductofrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\altaproductofrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\properties\\settings.settings||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\properties\\settings.settings||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\properties\\settings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\properties\\settings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\editdeletefrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\editdeletefrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Antonio\\AppData\\Local\\Temp\\.vsdbgsrc\\628cc1d9b2919bdf0a3974f44c568b412fc5c334e06086bf21774eb3f0996686\\Application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Antonio\\AppData\\Local\\Temp\\.vsdbgsrc\\fb71020db5c79ad2da436ea3c020865d99d457ce7a5edb9f235c3f42006adc0c\\NativeWindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\rj\u002Bcable.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\rj\u002Bcable.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Antonio\\AppData\\Local\\Temp\\.vsdbgsrc\\58d0971c9f804ab12b239992121df661f1e03bbb2d10f3103d4a8cc28bf67691\\CheckedListBox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\editdeletefrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\editdeletefrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\abmproductosfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\abmproductosfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\formseleccioncalibres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\formseleccioncalibres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\editdeletefrm.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\editdeletefrm.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\altaproductofrm.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\altaproductofrm.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\compartidos\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\compartidos\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|solutionrelative:demo_pollo\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,28 +116,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Main.cs",
-              "DocumentMoniker": "C:\\Users\\esalvano\\Desktop\\emi\\Repos\\C#\\demo_pollos\\demo_pollo\\Main.cs",
-              "RelativeDocumentMoniker": "demo_pollo\\Main.cs",
-              "ToolTip": "C:\\Users\\esalvano\\Desktop\\emi\\Repos\\C#\\demo_pollos\\demo_pollo\\Main.cs",
-              "RelativeToolTip": "demo_pollo\\Main.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAADgv3UAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "OleDbConnectionFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Antonio\\AppData\\Local\\Temp\\.vsdbgsrc\\43b18a559fca7f1fb264ce294eae943149e2103eb8763156ea27ca62fb7520b9\\OleDbConnectionFactory.cs",
+              "ToolTip": "C:\\Users\\Antonio\\AppData\\Local\\Temp\\.vsdbgsrc\\43b18a559fca7f1fb264ce294eae943149e2103eb8763156ea27ca62fb7520b9\\OleDbConnectionFactory.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAtwBkAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T14:08:44.292Z",
+              "WhenOpened": "2025-02-28T19:44:49.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Reporte.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\Reporte.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\Reporte.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\Reporte.cs [Dise\u00F1o]",
+              "RelativeToolTip": "demo_pollo\\Reporte.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T19:36:48.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OleDbConnectionInternal.cs",
+              "DocumentMoniker": "C:\\Users\\Antonio\\AppData\\Local\\Temp\\.vsdbgsrc\\598bd126614fe8c9ccf4c26754918d5bbe5282c328cfa73c555ecc5dde791d90\\OleDbConnectionInternal.cs",
+              "ToolTip": "C:\\Users\\Antonio\\AppData\\Local\\Temp\\.vsdbgsrc\\598bd126614fe8c9ccf4c26754918d5bbe5282c328cfa73c555ecc5dde791d90\\OleDbConnectionInternal.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAtwGUAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T19:25:46.194Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Main.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\esalvano\\Desktop\\emi\\Repos\\C#\\demo_pollos\\demo_pollo\\Main.cs",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\Main.cs",
               "RelativeDocumentMoniker": "demo_pollo\\Main.cs",
-              "ToolTip": "C:\\Users\\esalvano\\Desktop\\emi\\Repos\\C#\\demo_pollos\\demo_pollo\\Main.cs [Dise\u00F1o]",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\Main.cs [Dise\u00F1o]",
               "RelativeToolTip": "demo_pollo\\Main.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-21T14:08:38.39Z",
@@ -51,16 +165,282 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\esalvano\\Desktop\\emi\\Repos\\C#\\demo_pollos\\demo_pollo\\Program.cs",
-              "RelativeDocumentMoniker": "demo_pollo\\Program.cs",
-              "ToolTip": "C:\\Users\\esalvano\\Desktop\\emi\\Repos\\C#\\demo_pollos\\demo_pollo\\Program.cs",
-              "RelativeToolTip": "demo_pollo\\Program.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAqwBYAAABkAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "MasFrm.cs",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\MasFrm.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\MasFrm.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\MasFrm.cs",
+              "RelativeToolTip": "demo_pollo\\MasFrm.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAkwFcAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T14:07:12.345Z",
+              "WhenOpened": "2025-02-26T12:27:47.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cs",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\Main.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\Main.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\Main.cs",
+              "RelativeToolTip": "demo_pollo\\Main.cs",
+              "ViewState": "AQIAAFcCAAAAAAAAAAAAwF8CAAB/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T14:08:44.292Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BBDD.cs",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\Compartidos\\BBDD.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\Compartidos\\BBDD.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\Compartidos\\BBDD.cs",
+              "RelativeToolTip": "demo_pollo\\Compartidos\\BBDD.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAnwBQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T23:54:36.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OleDbCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Antonio\\AppData\\Local\\Temp\\.vsdbgsrc\\8a70bd5d7448de2acb062824353556d9165f14a2d72fd1d02912236ebf1da895\\OleDbCommand.cs",
+              "ToolTip": "C:\\Users\\Antonio\\AppData\\Local\\Temp\\.vsdbgsrc\\8a70bd5d7448de2acb062824353556d9165f14a2d72fd1d02912236ebf1da895\\OleDbCommand.cs",
+              "ViewState": "AQIAAFwCAAAAAAAAAAAEwH8DAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T18:15:48.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MasFrm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\MasFrm.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\MasFrm.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\MasFrm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "demo_pollo\\MasFrm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T12:27:32.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Settings.Designer.cs",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\Properties\\Settings.Designer.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\Properties\\Settings.Designer.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\Properties\\Settings.Designer.cs",
+              "RelativeToolTip": "demo_pollo\\Properties\\Settings.Designer.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAewEwAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T19:19:47.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\Program.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\Program.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\Program.cs",
+              "RelativeToolTip": "demo_pollo\\Program.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAABYAAABhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T16:56:49.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AltaProductoFrm.cs",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\AltaProductoFrm.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\AltaProductoFrm.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\AltaProductoFrm.cs",
+              "RelativeToolTip": "demo_pollo\\AltaProductoFrm.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAIA9wBcAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T16:29:04.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\App.config",
+              "RelativeDocumentMoniker": "demo_pollo\\App.config",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\App.config",
+              "RelativeToolTip": "demo_pollo\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwHgAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-02-26T19:18:59.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Settings.settings",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\Properties\\Settings.settings",
+              "RelativeDocumentMoniker": "demo_pollo\\Properties\\Settings.settings",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\Properties\\Settings.settings",
+              "RelativeToolTip": "demo_pollo\\Properties\\Settings.settings",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwCIAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
+              "WhenOpened": "2025-02-26T19:20:13.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CheckedListBox.cs",
+              "DocumentMoniker": "C:\\Users\\Antonio\\AppData\\Local\\Temp\\.vsdbgsrc\\58d0971c9f804ab12b239992121df661f1e03bbb2d10f3103d4a8cc28bf67691\\CheckedListBox.cs",
+              "ToolTip": "C:\\Users\\Antonio\\AppData\\Local\\Temp\\.vsdbgsrc\\58d0971c9f804ab12b239992121df661f1e03bbb2d10f3103d4a8cc28bf67691\\CheckedListBox.cs",
+              "ViewState": "AQIAAHoFAAAAAAAAAAAEwIkFAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T13:06:39.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EditDeleteFrm.cs",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\EditDeleteFrm.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\EditDeleteFrm.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\EditDeleteFrm.cs",
+              "RelativeToolTip": "demo_pollo\\EditDeleteFrm.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAMwA4AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T16:43:02.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EditDeleteFrm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\EditDeleteFrm.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\EditDeleteFrm.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\EditDeleteFrm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "demo_pollo\\EditDeleteFrm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T13:29:38.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "NativeWindow.cs",
+              "DocumentMoniker": "C:\\Users\\Antonio\\AppData\\Local\\Temp\\.vsdbgsrc\\fb71020db5c79ad2da436ea3c020865d99d457ce7a5edb9f235c3f42006adc0c\\NativeWindow.cs",
+              "ToolTip": "C:\\Users\\Antonio\\AppData\\Local\\Temp\\.vsdbgsrc\\fb71020db5c79ad2da436ea3c020865d99d457ce7a5edb9f235c3f42006adc0c\\NativeWindow.cs",
+              "ViewState": "AQIAAOcCAAAAAAAAAAAYwPcCAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T17:55:21.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Application.cs",
+              "DocumentMoniker": "C:\\Users\\Antonio\\AppData\\Local\\Temp\\.vsdbgsrc\\628cc1d9b2919bdf0a3974f44c568b412fc5c334e06086bf21774eb3f0996686\\Application.cs",
+              "ToolTip": "C:\\Users\\Antonio\\AppData\\Local\\Temp\\.vsdbgsrc\\628cc1d9b2919bdf0a3974f44c568b412fc5c334e06086bf21774eb3f0996686\\Application.cs",
+              "ViewState": "AQIAAAYBAAAAAAAAAAAIwBIBAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T16:26:20.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RJ\u002BCable.ico -  [Espa\u00F1ol (Espa\u00F1a, alfabetizaci\u00F3n internacional)] - Icon [64x64, 32 bits, BMP]",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\RJ\u002BCable.ico",
+              "RelativeDocumentMoniker": "demo_pollo\\RJ\u002BCable.ico",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\RJ\u002BCable.ico -  [Espa\u00F1ol (Espa\u00F1a, alfabetizaci\u00F3n internacional)] - Icon [64x64, 32 bits, BMP]",
+              "RelativeToolTip": "demo_pollo\\RJ\u002BCable.ico -  [Espa\u00F1ol (Espa\u00F1a, alfabetizaci\u00F3n internacional)] - Icon [64x64, 32 bits, BMP]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
+              "WhenOpened": "2025-02-26T16:12:00.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Config.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\Config.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\Config.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\Config.cs [Dise\u00F1o]",
+              "RelativeToolTip": "demo_pollo\\Config.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T12:19:18.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AbmProductosFrm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\AbmProductosFrm.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\AbmProductosFrm.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\AbmProductosFrm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "demo_pollo\\AbmProductosFrm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T15:11:36.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "FormSeleccionCalibres.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\FormSeleccionCalibres.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\FormSeleccionCalibres.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\FormSeleccionCalibres.cs [Dise\u00F1o]",
+              "RelativeToolTip": "demo_pollo\\FormSeleccionCalibres.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T12:27:25.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Config.cs",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\Config.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\Config.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\Config.cs",
+              "RelativeToolTip": "demo_pollo\\Config.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAADkAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T12:19:29.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\Compartidos\\Producto.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\Compartidos\\Producto.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\Compartidos\\Producto.cs",
+              "RelativeToolTip": "demo_pollo\\Compartidos\\Producto.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T16:47:56.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "EditDeleteFrm.Designer.cs",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\EditDeleteFrm.Designer.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\EditDeleteFrm.Designer.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\EditDeleteFrm.Designer.cs",
+              "RelativeToolTip": "demo_pollo\\EditDeleteFrm.Designer.cs",
+              "ViewState": "AQIAAHcBAAAAAAAAAABRwHoBAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T16:43:50.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AltaProductoFrm.Designer.cs",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\AltaProductoFrm.Designer.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\AltaProductoFrm.Designer.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\AltaProductoFrm.Designer.cs",
+              "RelativeToolTip": "demo_pollo\\AltaProductoFrm.Designer.cs",
+              "ViewState": "AQIAAEYBAAAAAAAAAAAwwEUBAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T16:29:41.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Main.Designer.cs",
+              "DocumentMoniker": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\Main.Designer.cs",
+              "RelativeDocumentMoniker": "demo_pollo\\Main.Designer.cs",
+              "ToolTip": "D:\\Visual Studio C#\\San Andr\u00E9s\\demo_pollos\\demo_pollo\\Main.Designer.cs",
+              "RelativeToolTip": "demo_pollo\\Main.Designer.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAABRwBYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T15:28:43.111Z"
             }
           ]
         }

@@ -53,8 +53,11 @@ namespace demo_pollo
 
         private void customButton3_Click(object sender, EventArgs e)
         {
+          
             Config Con = new Config();
-            Con.Show();
+           // Con.Show();
+           Con.ShowDialog();
+
         }
 
         private void volverBtn_Click(object sender, EventArgs e)
@@ -82,6 +85,8 @@ namespace demo_pollo
 
         private void reportesBtn_Click(object sender, EventArgs e)
         {
+           Reporte reporte = new Reporte();
+            reporte.ShowDialog();
 
         }
     }

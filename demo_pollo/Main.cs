@@ -1,17 +1,15 @@
-﻿using System;
+﻿using demo_pollo.Compartidos;
+using demo_pollo.Properties;
+using System;
+using System.Collections.Generic;
+using System.Data.OleDb;
 using System.Drawing;
 using System.IO;
+using System.Linq;
+using System.Net;
+using System.Net.Sockets;
 using System.Text;
 using System.Windows.Forms;
-using System.Net.Sockets;
-using demo_pollo.Properties;
-using System.Net;
-using System.Data.OleDb;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Diagnostics.Eventing.Reader;
-using demo_pollo.Compartidos;
 
 
 namespace demo_pollo
@@ -29,11 +27,12 @@ namespace demo_pollo
         private CustomButton ultimoBotonPresionado = null;
         private CustomButton ultimoBotonPresionadoCalibre = null;
         string filePath;
-
+        string Descrip;
+        int cod_prod = 0;
 
         //Agregar para tener TRIAL
         private bool _Trial;
-        
+
         public Main(bool IsTrial)
 
         {
@@ -41,12 +40,12 @@ namespace demo_pollo
             this.CargarProductosActivos();
             this.CargarBotonesProducto();
             this.CargarBotonesCalibre();
-            
+
 
             this.MaximumSize = SystemInformation.PrimaryMonitorMaximizedWindowSize;
             this.WindowState = FormWindowState.Maximized;
 
-            
+
             if (IsTrial == false)
             {
                 lblTrial.Text = "FULL";
@@ -60,13 +59,13 @@ namespace demo_pollo
             }
 
             _Trial = IsTrial;
-            
+
         }
-        
+
 
 
         // No trial
-        
+
         /*
         public Main()
         {
@@ -77,12 +76,13 @@ namespace demo_pollo
             this.WindowState = FormWindowState.Maximized;
 
         }*/
-        
+
 
         private void CargarProductosEnBotonesProducto()
         {
             int indice = 0;
-            foreach (Producto producto in productos) {
+            foreach (Producto producto in productos)
+            {
                 botonesProducto[indice].SetProducto(producto);
                 botonesProducto[indice].Text = producto.getDescripcion();
                 botonesProducto[indice].BackColor = Color.CornflowerBlue;
@@ -110,7 +110,8 @@ namespace demo_pollo
             botonesProducto[13] = customButton21;
             botonesProducto[14] = customButton22;
 
-            foreach(CustomButton boton in botonesProducto) { 
+            foreach (CustomButton boton in botonesProducto)
+            {
                 boton.BackColor = Color.Gray;
                 boton.Enabled = false;
             }
@@ -128,10 +129,11 @@ namespace demo_pollo
             botonesCalibre[4] = (customButton5);
             botonesCalibre[5] = (customButton7);
         }
-        private void DesactivarBotonesDeCalibre() {
+        private void DesactivarBotonesDeCalibre()
+        {
             foreach (Control boton in botonesCalibre)
             {
-              //  boton.Text = "";
+                //  boton.Text = "";
                 boton.Enabled = false;
                 boton.BackColor = Color.Gray;
 
@@ -177,10 +179,10 @@ namespace demo_pollo
             {
 
                 filePath = openFileDialog1.FileName;
-            
+
                 settings.Ult_Etq = filePath;
                 settings.Save();
-             
+
                 ruta_etq = filePath; // guardo para el momento de impresión
             }
         }
@@ -207,7 +209,7 @@ namespace demo_pollo
                 productoSeleccionado.getCodigoProducto() +
                 productoSeleccionado.getTipoProducto() +
                 productoSeleccionado.getConservacion() +
-                productoSeleccionado.getGrado()+
+                productoSeleccionado.getGrado() +
                 calibre +
                 productoSeleccionado.getRepeticion();
         }
@@ -215,7 +217,7 @@ namespace demo_pollo
         {
             CustomButton btn = sender as CustomButton; // El botón que disparó el evento.
 
-            if(btn != null)
+            if (btn != null)
             {
                 // Restaurar el color original del último botón presionado
                 if (ultimoBotonPresionadoCalibre != null)
@@ -257,6 +259,9 @@ namespace demo_pollo
             // Buscar en la lista de productos ya cargada
             Producto productoSeleccionado = ultimoBotonPresionado.GetProducto();
 
+            Descrip = productoSeleccionado.getDescripcion();
+
+            cod_prod = Convert.ToInt16(productoSeleccionado.getCodigoProducto());
             if (productoSeleccionado != null)
             {
                 // Mostrar el producto encontrado en el ListBox
@@ -301,7 +306,7 @@ namespace demo_pollo
                                     txtTipoProducto.Text = "Entero";
                                 else
                                     txtTipoProducto.Text = "Trozado";
-                            
+
                                 if (lector["conservacion"].ToString() == "1")
                                     txtConservacion.Text = "Refrigerado";
                                 else
@@ -309,10 +314,10 @@ namespace demo_pollo
 
                                 textNomEtiqueta.Text = lector["pathEtiqueta"].ToString();
                                 int i = textNomEtiqueta.Text.LastIndexOf("\\");
-                                textNomEtiqueta.Text = textNomEtiqueta.Text.Substring(i+1);                               
+                                textNomEtiqueta.Text = textNomEtiqueta.Text.Substring(i + 1);
                                 i = textNomEtiqueta.Text.LastIndexOf('.');
                                 textNomEtiqueta.Text = textNomEtiqueta.Text.Remove(i, 4);
-
+                               
                                 // Generar código después de cargar datos
                                 GenerarCodigo();
                             }
@@ -321,7 +326,7 @@ namespace demo_pollo
                                 // Limpiar campos si no se encuentra el producto
                                 txtTipoProducto.Clear();
                                 txtConservacion.Clear();
-                                
+
                             }
                         }
                     }
@@ -356,18 +361,16 @@ namespace demo_pollo
         //Imprimir
         private void imprimirBtn_Click(object sender, EventArgs e)
         {
-            
-           
 
-
-            if (ultimoBotonPresionado.GetProducto().getCalibres().Count > 0 
-                && ultimoBotonPresionadoCalibre == null) 
+            if (ultimoBotonPresionado.GetProducto().getCalibres().Count > 0
+                && ultimoBotonPresionadoCalibre == null)
             {
 
                 MessageBox.Show("SE DEBE SELECCIONAR UNA CALIDAD.", "ERROR DE OPERACIÓN !!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
-            else {
+            else
+            {
 
 
                 IPEndPoint EndPoint_Z = new IPEndPoint(IPAddress.Parse(settings.IP_Zebra), 9100);
@@ -376,18 +379,23 @@ namespace demo_pollo
                     if (!sock.Connected)
                     {
                         //para debug sin conexion a imp
-                      ////  SET_ETQ();
-                      ///  return;
+
+                      //  MessageBox.Show("La Impresora No conecta.", "Error de comunicaciones", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                      ////// SET_ETQ();
+                      //////  CargarReporte();
+                      
 
                         // if (settings.sonidos)
                         //    warning.Play();
+
+
                         IAsyncResult res = sock.BeginConnect(EndPoint_Z, null, null);
                         res.AsyncWaitHandle.WaitOne(500); // .5 sec timeout
                     }
                     if (sock.Connected)
                     {
                         SET_ETQ();
-                        //CargarReporte();
+                        CargarReporte();
                     }
                     else
                     {
@@ -416,8 +424,8 @@ namespace demo_pollo
 
                 String pathEtiqueta = ultimoBotonPresionado.GetProducto().getPathEtiqueta();
 
-               // pathEtiqueta = pathEtiqueta + "\\Etiquetas";
-              
+                // pathEtiqueta = pathEtiqueta + "\\Etiquetas";
+
                 Streader = new StreamReader(pathEtiqueta);
                 string line;
                 line = Streader.ReadLine();
@@ -431,7 +439,7 @@ namespace demo_pollo
                     if (line != null)
                     {
                         if (line.Contains("\\^FDCA^FS"))
-                        {
+                        {                   
                             anyOf = "\\".ToCharArray();//busca CA de Calibre
                             Index = line.IndexOfAny(anyOf, 0);//determina donde está
                             line = line.Remove(Index + 4, 2);
@@ -442,7 +450,7 @@ namespace demo_pollo
                         }
                         if (line.Contains("\\^FDDESCRIPCION PRODUCTO^FS"))
                         {
-                           
+
                             anyOf = "\\".ToCharArray();//busca Descrip
 
                             //ubico ^FB para cambiar el Nro de lineas de 1 a 2
@@ -452,25 +460,14 @@ namespace demo_pollo
                             line = line.Remove(Index - 8, 1);
                             line = line.Insert(Index - 8, "2");
 
-                            //^FT521,200^A0N,23,26^FB277,1,0,C^FH\^FDDESCRIPCION PRODUCTO^FS
+
 
                             Index = line.IndexOfAny(anyOf, 0);//determina donde está
 
                             line = line.Remove(Index + 4, 20);
 
-                            //   string[] partes = txtDescripcion.Text.Split(new string[] { " CON " }, StringSplitOptions.None);
-                            //   string nuevaDescripcion = partes.Length > 1
-                            //        ? partes[0] + "\\&" + "CON " + partes[1]  // Usa "\&" para el salto de línea en ZPL
-                            //       : txtDescripcion.Text; // Si no hay "CON", usa el texto completo
 
-                            // Reemplazar la línea en el código de impresión
-
-                            //   line = line.Insert(Index + 4, nuevaDescripcion);
-
-
-                            String calibre = ultimoBotonPresionadoCalibre != null ? ultimoBotonPresionadoCalibre.Text : "00";
-
-                            line = line.Insert(Index + 4, calibre); //inserta el nuevo  calibre
+                            line = line.Insert(Index + 4, Descrip);
 
 
                         }
@@ -479,25 +476,26 @@ namespace demo_pollo
                             anyOf = "\\".ToCharArray();//busca Conservacion
                             Index = line.IndexOfAny(anyOf, 0);//determina donde está
                             line = line.Remove(Index + 4, 12);
-
+                            /*
                             if (txtConservacion.Text == "1")
 
                                 line = line.Insert(Index + 4, "CONGELADO"); //inserta la conservacion
                             else
                                 line = line.Insert(Index + 4, "REFRIGERADO"); //inserta la conservacion
-                                                       
+                             */
+                            line = line.Insert(Index + 4, txtConservacion.Text);
                         }
                         if (line.Contains("^FD>:BARRAS"))
-                        
+
                         {
                             anyOf = ">".ToCharArray();//busca codigo de barras
                             Index = line.IndexOfAny(anyOf, 0);//determina donde está
                             line = line.Remove(Index + 2, 6);
-                         
+
                             line = line.Insert(Index + 2, txtCodigo.Text); //inserta codigo de barras
                         }
                         if (line.Contains("\\^FDCODIGO HUMANO^FS"))
-                        
+
                         {
                             anyOf = "\\".ToCharArray();//busca Cod Hum
                             Index = line.IndexOfAny(anyOf, 0);//determina donde está
@@ -515,7 +513,7 @@ namespace demo_pollo
                             string senasa = settings.senasa1 + " " + settings.senasa2 + " " + settings.senasa3;
 
                             line = line.Insert(Index + 4, senasa); //inserta
-                          
+
 
                             //
                         }
@@ -536,6 +534,8 @@ namespace demo_pollo
                     MessageBox.Show("El Identificador de la Fecha es Erroneo en el archivo .PRN", "Error de Diseño");
                 */
 
+
+                
                 if (sock.Connected)
                 {
                     //borrar buffer Z
@@ -558,11 +558,13 @@ namespace demo_pollo
                     //     continue;
 
                 }
+
+                
             }
             catch (Exception ex)
             {
-                 MessageBox.Show(ex.ToString());
-              //  MessageBox.Show("La Impresora Zebra se Desconectó  !!!\nVerifique su correcta alimentación y el cable de comunicación Ethernet.\nVerifique la Direccion IP.\nPara reconectar, reinicie el Sistema.", "Error de Sistema.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show(ex.ToString());
+                //  MessageBox.Show("La Impresora Zebra se Desconectó  !!!\nVerifique su correcta alimentación y el cable de comunicación Ethernet.\nVerifique la Direccion IP.\nPara reconectar, reinicie el Sistema.", "Error de Sistema.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
         private void CargarReporte()
@@ -573,18 +575,28 @@ namespace demo_pollo
                 {
                     conexion.Open();
 
-                    string query = @"INSERT INTO Etiquetas_impresas (fecha_hora, id_producto, id_calibre) 
-                             VALUES (@fecha_hora, @id_producto, @id_calibre)";
+                    string query = @"INSERT INTO Etiquetas_impresas (fecha_hora,producto,calibre,barras,nom_etq) 
+                             VALUES (@fecha_hora,@producto,@calibre,@barras,@nom_etq)";
 
                     using (OleDbCommand comando = new OleDbCommand(query, conexion))
                     {
                         String calibre = ultimoBotonPresionadoCalibre != null ? ultimoBotonPresionadoCalibre.Text : null;
 
+                        if (calibre == null)
+                            calibre = "0";
+
+
                         // Asignar valores desde los controles del formulario
-                        comando.Parameters.AddWithValue("@fecha_hora", DateTime.Now);
-                        comando.Parameters.AddWithValue("@id_producto", txtCodigo.Text);
-                        comando.Parameters.AddWithValue("@id_calibre", calibre);
-                        comando.Parameters.AddWithValue("@id_pathEtiqueta", textNomEtiqueta.Text);
+                            comando.Parameters.AddWithValue("@fecha_hora", DateTime.Now.ToString());
+
+
+                        comando.Parameters.AddWithValue("@producto", cod_prod);
+
+                        comando.Parameters.AddWithValue("@calibre", Convert.ToInt16(calibre));
+
+                        comando.Parameters.AddWithValue("@barras", txtCodigo.Text);
+
+                        comando.Parameters.AddWithValue("@nom_etq",textNomEtiqueta.Text);
 
                         comando.ExecuteNonQuery();
                     }
@@ -613,6 +625,6 @@ namespace demo_pollo
             InicializarFormulario();
             this.Show();
         }
+
     }
 }
-  

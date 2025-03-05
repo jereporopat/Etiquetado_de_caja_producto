@@ -30,6 +30,7 @@ namespace demo_pollo
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditDeleteFrm));
             this.EditDeleteLb = new System.Windows.Forms.ListBox();
             this.datosLb = new System.Windows.Forms.ListBox();
             this.codigoProductoLbl = new System.Windows.Forms.Label();
@@ -62,17 +63,19 @@ namespace demo_pollo
             // 
             // EditDeleteLb
             // 
+            this.EditDeleteLb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditDeleteLb.FormattingEnabled = true;
-            this.EditDeleteLb.Location = new System.Drawing.Point(10, 29);
+            this.EditDeleteLb.ItemHeight = 16;
+            this.EditDeleteLb.Location = new System.Drawing.Point(9, 12);
             this.EditDeleteLb.Name = "EditDeleteLb";
-            this.EditDeleteLb.Size = new System.Drawing.Size(853, 381);
+            this.EditDeleteLb.Size = new System.Drawing.Size(880, 388);
             this.EditDeleteLb.TabIndex = 0;
             // 
             // datosLb
             // 
             this.datosLb.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.datosLb.FormattingEnabled = true;
-            this.datosLb.Location = new System.Drawing.Point(24, 41);
+            this.datosLb.Location = new System.Drawing.Point(24, 54);
             this.datosLb.Name = "datosLb";
             this.datosLb.Size = new System.Drawing.Size(241, 251);
             this.datosLb.Sorted = true;
@@ -83,47 +86,50 @@ namespace demo_pollo
             // codigoProductoLbl
             // 
             this.codigoProductoLbl.AutoSize = true;
+            this.codigoProductoLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.codigoProductoLbl.Location = new System.Drawing.Point(294, 50);
             this.codigoProductoLbl.Name = "codigoProductoLbl";
-            this.codigoProductoLbl.Size = new System.Drawing.Size(131, 13);
+            this.codigoProductoLbl.Size = new System.Drawing.Size(179, 16);
             this.codigoProductoLbl.TabIndex = 2;
             this.codigoProductoLbl.Text = "CODIGO DE PRODUCTO";
             // 
             // descripcionLbl
             // 
             this.descripcionLbl.AutoSize = true;
+            this.descripcionLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descripcionLbl.Location = new System.Drawing.Point(294, 85);
             this.descripcionLbl.Name = "descripcionLbl";
-            this.descripcionLbl.Size = new System.Drawing.Size(80, 13);
+            this.descripcionLbl.Size = new System.Drawing.Size(109, 16);
             this.descripcionLbl.TabIndex = 3;
             this.descripcionLbl.Text = "DESCRIPCION";
             // 
             // codigoDeProductoTb
             // 
-            this.codigoDeProductoTb.Location = new System.Drawing.Point(444, 50);
+            this.codigoDeProductoTb.Location = new System.Drawing.Point(482, 50);
             this.codigoDeProductoTb.Name = "codigoDeProductoTb";
             this.codigoDeProductoTb.Size = new System.Drawing.Size(100, 20);
             this.codigoDeProductoTb.TabIndex = 4;
             // 
             // descripcionTb
             // 
-            this.descripcionTb.Location = new System.Drawing.Point(444, 85);
+            this.descripcionTb.Location = new System.Drawing.Point(482, 85);
             this.descripcionTb.Name = "descripcionTb";
-            this.descripcionTb.Size = new System.Drawing.Size(100, 20);
+            this.descripcionTb.Size = new System.Drawing.Size(165, 20);
             this.descripcionTb.TabIndex = 5;
             // 
             // plantaLbl
             // 
             this.plantaLbl.AutoSize = true;
+            this.plantaLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.plantaLbl.Location = new System.Drawing.Point(293, 151);
             this.plantaLbl.Name = "plantaLbl";
-            this.plantaLbl.Size = new System.Drawing.Size(49, 13);
+            this.plantaLbl.Size = new System.Drawing.Size(66, 16);
             this.plantaLbl.TabIndex = 6;
             this.plantaLbl.Text = "PLANTA";
             // 
             // plantaTb
             // 
-            this.plantaTb.Location = new System.Drawing.Point(444, 151);
+            this.plantaTb.Location = new System.Drawing.Point(482, 151);
             this.plantaTb.Name = "plantaTb";
             this.plantaTb.Size = new System.Drawing.Size(100, 20);
             this.plantaTb.TabIndex = 7;
@@ -131,15 +137,16 @@ namespace demo_pollo
             // repeticionLbl
             // 
             this.repeticionLbl.AutoSize = true;
+            this.repeticionLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.repeticionLbl.Location = new System.Drawing.Point(293, 120);
             this.repeticionLbl.Name = "repeticionLbl";
-            this.repeticionLbl.Size = new System.Drawing.Size(72, 13);
+            this.repeticionLbl.Size = new System.Drawing.Size(98, 16);
             this.repeticionLbl.TabIndex = 12;
             this.repeticionLbl.Text = "REPETICION";
             // 
             // repeticionTb
             // 
-            this.repeticionTb.Location = new System.Drawing.Point(444, 120);
+            this.repeticionTb.Location = new System.Drawing.Point(482, 120);
             this.repeticionTb.Name = "repeticionTb";
             this.repeticionTb.Size = new System.Drawing.Size(100, 20);
             this.repeticionTb.TabIndex = 13;
@@ -172,7 +179,7 @@ namespace demo_pollo
             this.habilitacionBtn.BackColor = System.Drawing.Color.Red;
             this.habilitacionBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.habilitacionBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.habilitacionBtn.Location = new System.Drawing.Point(153, 300);
+            this.habilitacionBtn.Location = new System.Drawing.Point(153, 325);
             this.habilitacionBtn.Name = "habilitacionBtn";
             this.habilitacionBtn.Size = new System.Drawing.Size(112, 44);
             this.habilitacionBtn.TabIndex = 16;
@@ -194,7 +201,7 @@ namespace demo_pollo
             // 
             // openFileDialog1
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "Archivos PRN (*.prn)|*.prn";
             // 
             // textPathEtiqueta
             // 
@@ -210,69 +217,74 @@ namespace demo_pollo
             // tipoProductoCb
             // 
             this.tipoProductoCb.FormattingEnabled = true;
-            this.tipoProductoCb.Location = new System.Drawing.Point(444, 177);
+            this.tipoProductoCb.Location = new System.Drawing.Point(482, 177);
             this.tipoProductoCb.Name = "tipoProductoCb";
-            this.tipoProductoCb.Size = new System.Drawing.Size(121, 21);
+            this.tipoProductoCb.Size = new System.Drawing.Size(100, 21);
             this.tipoProductoCb.TabIndex = 20;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(293, 177);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 13);
+            this.label1.Size = new System.Drawing.Size(156, 16);
             this.label1.TabIndex = 21;
             this.label1.Text = "TIPO DE PRODUCTO";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(293, 211);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 13);
+            this.label2.Size = new System.Drawing.Size(126, 16);
             this.label2.TabIndex = 23;
             this.label2.Text = "CONSERVACION";
             // 
             // conservacionCb
             // 
             this.conservacionCb.FormattingEnabled = true;
-            this.conservacionCb.Location = new System.Drawing.Point(444, 211);
+            this.conservacionCb.Location = new System.Drawing.Point(482, 211);
             this.conservacionCb.Name = "conservacionCb";
-            this.conservacionCb.Size = new System.Drawing.Size(121, 21);
+            this.conservacionCb.Size = new System.Drawing.Size(100, 21);
             this.conservacionCb.TabIndex = 22;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(293, 249);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 13);
+            this.label3.Size = new System.Drawing.Size(61, 16);
             this.label3.TabIndex = 25;
             this.label3.Text = "GRADO";
             // 
             // gradoCb
             // 
             this.gradoCb.FormattingEnabled = true;
-            this.gradoCb.Location = new System.Drawing.Point(444, 249);
+            this.gradoCb.Location = new System.Drawing.Point(482, 249);
             this.gradoCb.Name = "gradoCb";
-            this.gradoCb.Size = new System.Drawing.Size(121, 21);
+            this.gradoCb.Size = new System.Drawing.Size(100, 21);
             this.gradoCb.TabIndex = 24;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(293, 287);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 13);
+            this.label4.Size = new System.Drawing.Size(129, 16);
             this.label4.TabIndex = 27;
             this.label4.Text = "RUTA ETIQUETA";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(658, 50);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(638, 50);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 13);
+            this.label5.Size = new System.Drawing.Size(80, 16);
             this.label5.TabIndex = 28;
             this.label5.Text = "CALIBRES";
             // 
@@ -308,7 +320,7 @@ namespace demo_pollo
             // 
             this.agregarProductoBtn.BackColor = System.Drawing.Color.LimeGreen;
             this.agregarProductoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.agregarProductoBtn.Location = new System.Drawing.Point(24, 300);
+            this.agregarProductoBtn.Location = new System.Drawing.Point(24, 325);
             this.agregarProductoBtn.Name = "agregarProductoBtn";
             this.agregarProductoBtn.Size = new System.Drawing.Size(112, 44);
             this.agregarProductoBtn.TabIndex = 32;
@@ -320,7 +332,7 @@ namespace demo_pollo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(875, 420);
+            this.ClientSize = new System.Drawing.Size(901, 411);
             this.Controls.Add(this.agregarProductoBtn);
             this.Controls.Add(this.agregarCalibreBtn);
             this.Controls.Add(this.removerBtn);
@@ -348,6 +360,7 @@ namespace demo_pollo
             this.Controls.Add(this.codigoProductoLbl);
             this.Controls.Add(this.datosLb);
             this.Controls.Add(this.EditDeleteLb);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EditDeleteFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Editar / Deshabilitar";

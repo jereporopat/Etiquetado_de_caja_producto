@@ -52,12 +52,13 @@ namespace demo_pollo
 
         private void bt_Terminar_Click(object sender, EventArgs e)
         {
+          
+
+            DialogResult res = MessageBox.Show("Se Actualizarán los cambios de la Configuración.", "Información sobre la Configuración", MessageBoxButtons.OK, MessageBoxIcon.Information);
             SaveSettings();
 
-            DialogResult res = MessageBox.Show("Se Actualizarán los cambios de la Configuración.", "Información sobre la Configuración", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-
-            DialogResult = res;
             Close();
+           
         }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Config));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tB_Mask_Z = new System.Windows.Forms.TextBox();
             this.tB_IP_Zebra = new System.Windows.Forms.TextBox();
@@ -63,7 +64,7 @@
             this.tB_Mask_Z.Location = new System.Drawing.Point(186, 142);
             this.tB_Mask_Z.Margin = new System.Windows.Forms.Padding(6);
             this.tB_Mask_Z.Name = "tB_Mask_Z";
-            this.tB_Mask_Z.Size = new System.Drawing.Size(184, 30);
+            this.tB_Mask_Z.Size = new System.Drawing.Size(184, 26);
             this.tB_Mask_Z.TabIndex = 13;
             this.tB_Mask_Z.Text = "255.255.255.000";
             this.tB_Mask_Z.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -73,7 +74,7 @@
             this.tB_IP_Zebra.Location = new System.Drawing.Point(186, 70);
             this.tB_IP_Zebra.Margin = new System.Windows.Forms.Padding(6);
             this.tB_IP_Zebra.Name = "tB_IP_Zebra";
-            this.tB_IP_Zebra.Size = new System.Drawing.Size(178, 30);
+            this.tB_IP_Zebra.Size = new System.Drawing.Size(178, 26);
             this.tB_IP_Zebra.TabIndex = 11;
             this.tB_IP_Zebra.Text = "192.168.000.001";
             this.tB_IP_Zebra.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -84,7 +85,7 @@
             this.label3.Location = new System.Drawing.Point(44, 147);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 25);
+            this.label3.Size = new System.Drawing.Size(70, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Mascara";
             // 
@@ -94,7 +95,7 @@
             this.label9.Location = new System.Drawing.Point(44, 75);
             this.label9.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(102, 25);
+            this.label9.Size = new System.Drawing.Size(83, 20);
             this.label9.TabIndex = 0;
             this.label9.Text = "IP Zebra 1";
             // 
@@ -152,7 +153,7 @@
             // 
             // Config
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(550, 622);
             this.Controls.Add(this.bt_cancelar);
@@ -161,6 +162,7 @@
             this.Controls.Add(this.groupBox3);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Config";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

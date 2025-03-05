@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSeleccionCalibres));
             this.calibresLb = new System.Windows.Forms.CheckedListBox();
             this.aceptar = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -57,7 +58,10 @@
             this.ClientSize = new System.Drawing.Size(275, 250);
             this.Controls.Add(this.aceptar);
             this.Controls.Add(this.calibresLb);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormSeleccionCalibres";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Seleccion de calibres";
             this.ResumeLayout(false);
 

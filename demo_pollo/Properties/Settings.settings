@@ -23,13 +23,13 @@
       <Value Profile="(Default)">Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\bin\Debug\Db.pollos.accdb</Value>
     </Setting>
     <Setting Name="senasa1" Type="System.String" Scope="User">
-      <Value Profile="(Default)">000</Value>
+      <Value Profile="(Default)">001</Value>
     </Setting>
     <Setting Name="senasa2" Type="System.String" Scope="User">
-      <Value Profile="(Default)">00000</Value>
+      <Value Profile="(Default)">00001</Value>
     </Setting>
     <Setting Name="senasa3" Type="System.String" Scope="User">
-      <Value Profile="(Default)">000</Value>
+      <Value Profile="(Default)">001</Value>
     </Setting>
   </Settings>
 </SettingsFile>

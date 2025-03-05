@@ -19,8 +19,8 @@ namespace demo_pollo
             Application.SetCompatibleTextRenderingDefault(false);
             //habilitar para trial
             
-            TrialMaker t = new TrialMaker("EtqCajPro", Application.StartupPath + "\\RegFile.reg",
-                 Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "PESetp.dbf",
+            TrialMaker t = new TrialMaker("demo_pollo", Application.StartupPath + "\\RegFile.reg",
+                 Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\PESetp.dbf",
                 "TE: +(5411) 7079 7262 - (WA)+(5411) 7079 7262\ne-mail: info@siscod.com.ar - web: www.siscod.com",
                 30, 200, "123");
 

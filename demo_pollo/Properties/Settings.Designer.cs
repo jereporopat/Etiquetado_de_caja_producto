@@ -84,7 +84,7 @@ namespace demo_pollo.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("000")]
+        [global::System.Configuration.DefaultSettingValueAttribute("001")]
         public string senasa1 {
             get {
                 return ((string)(this["senasa1"]));
@@ -96,7 +96,7 @@ namespace demo_pollo.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("00000")]
+        [global::System.Configuration.DefaultSettingValueAttribute("00001")]
         public string senasa2 {
             get {
                 return ((string)(this["senasa2"]));
@@ -108,7 +108,7 @@ namespace demo_pollo.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("000")]
+        [global::System.Configuration.DefaultSettingValueAttribute("001")]
         public string senasa3 {
             get {
                 return ((string)(this["senasa3"]));

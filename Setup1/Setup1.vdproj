@@ -327,6 +327,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_3918E35F229446AEB2507B5EAFA35D0D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_3A9E326B22984DF053DB4AC75541ABE5"
         "OwnerKey" = "8:_61363E26D1AB433AA077D826A2F4B50F"
         "MsmSig" = "8:_UNDEFINED"
@@ -447,6 +453,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_5A9F76BA6360440FAA3302A7B1910042"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_5B86AACB37ECF673DCA2D3816AB7B8AC"
         "OwnerKey" = "8:_61363E26D1AB433AA077D826A2F4B50F"
         "MsmSig" = "8:_UNDEFINED"
@@ -472,6 +484,12 @@
         "Entry"
         {
         "MsmKey" = "8:_61363E26D1AB433AA077D826A2F4B50F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_61C5F071DA064F8C9C36E393F37D6C34"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -1229,6 +1247,12 @@
         {
         "MsmKey" = "8:_AEF098282A31BEF6FFB8894BB6DBDE4E"
         "OwnerKey" = "8:_61363E26D1AB433AA077D826A2F4B50F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B152E3FC9CCD4B0B8AFC89A5C953AED3"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -2632,6 +2656,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -3767,6 +3799,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3918E35F229446AEB2507B5EAFA35D0D"
+            {
+            "SourcePath" = "8:..\\..\\..\\..\\..\\bin\\Debug\\Etiquetas\\ETQ_BASE2-1.prn"
+            "TargetName" = "8:ETQ_BASE2-1.prn"
+            "Tag" = "8:"
+            "Folder" = "8:_A798BB972F464B659266D2363883FE3D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3A9E326B22984DF053DB4AC75541ABE5"
             {
             "AssemblyRegister" = "3:1"
@@ -4170,6 +4222,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5A9F76BA6360440FAA3302A7B1910042"
+            {
+            "SourcePath" = "8:..\\..\\..\\..\\..\\bin\\Debug\\Etiquetas\\ETQ_BASE2.prn"
+            "TargetName" = "8:ETQ_BASE2.prn"
+            "Tag" = "8:"
+            "Folder" = "8:_A798BB972F464B659266D2363883FE3D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_5B86AACB37ECF673DCA2D3816AB7B8AC"
             {
             "AssemblyRegister" = "3:1"
@@ -4261,6 +4333,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_61C5F071DA064F8C9C36E393F37D6C34"
+            {
+            "SourcePath" = "8:..\\..\\..\\..\\..\\bin\\Debug\\Etiquetas\\ETQ_BASE2.nlbl"
+            "TargetName" = "8:ETQ_BASE2.nlbl"
+            "Tag" = "8:"
+            "Folder" = "8:_A798BB972F464B659266D2363883FE3D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_63E1A41E3F09D039D5F75252BAAEE396"
@@ -5968,6 +6060,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B152E3FC9CCD4B0B8AFC89A5C953AED3"
+            {
+            "SourcePath" = "8:..\\..\\..\\..\\..\\bin\\Debug\\Etiquetas\\ETQ_BASE2-1.nlbl"
+            "TargetName" = "8:ETQ_BASE2-1.nlbl"
+            "Tag" = "8:"
+            "Folder" = "8:_A798BB972F464B659266D2363883FE3D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_B47614043413F64F88455C855C5D8B71"
             {
             "AssemblyRegister" = "3:1"
@@ -7255,6 +7367,17 @@
             "Property" = "8:TARGETDIR"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_A798BB972F464B659266D2363883FE3D"
+                    {
+                    "Name" = "8:Etiquetas"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_97248F8B20B6426394BE3BCB0C459966"
+                        "Folders"
+                        {
+                        }
+                    }
                     "{9EF0B969-E518-4E46-987F-47570745A589}:_ACD4DBA8F41F42B28FA102A52D58D267"
                     {
                     "Name" = "8:Data"

@@ -1,38 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\esalvano\\Desktop\\emi\\Repos\\C#\\demo_pollos\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|demo_pollo||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8DCADA2-2BD3-46A9-9920-93FFB6619EE5}|demo_pollo\\demo_pollo.csproj|c:\\users\\esalvano\\desktop\\emi\\repos\\c#\\demo_pollos\\demo_pollo\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "demo_pollo",
-              "DocumentMoniker": "C:\\Users\\esalvano\\Desktop\\emi\\Repos\\C#\\demo_pollos\\demo_pollo\\demo_pollo.csproj",
-              "RelativeDocumentMoniker": "demo_pollo\\demo_pollo.csproj",
-              "ToolTip": "C:\\Users\\esalvano\\Desktop\\emi\\Repos\\C#\\demo_pollos\\demo_pollo\\demo_pollo.csproj",
-              "RelativeToolTip": "demo_pollo\\demo_pollo.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-05T18:52:10.546Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

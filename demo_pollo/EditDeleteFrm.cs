@@ -12,8 +12,6 @@ namespace demo_pollo
         List<Producto> productos;
         Producto productoSeleccionado;
 
-        string cadena = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Resources\\Db.pollos.accdb";
-        
         public EditDeleteFrm()
         {
             InitializeComponent();
@@ -151,14 +149,6 @@ namespace demo_pollo
             productoSeleccionado.setHabilitado(!productoSeleccionado.getHabilitado());
             BBDD.ActualizarHabilitacionDeProducto(productoSeleccionado);
             CargarListaDeProductos();
-        }
-
-        private void LimpiarFormulario()
-        {
-            codigoDeProductoTb.Clear();
-            descripcionTb.Clear();
-            plantaTb.Clear();
-            repeticionTb.Clear();
         }
 
         private void button1_Click(object sender, EventArgs e)

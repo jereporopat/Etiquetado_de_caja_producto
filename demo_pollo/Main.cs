@@ -23,7 +23,7 @@ namespace demo_pollo
         Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         string ruta_etq;
         // Conexión a la base de datos Access
-        readonly string cadena = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Resources\\Db.pollos.accdb";
+        readonly string cadena = demo_pollo.Properties.Settings.Default.Db_pollosConnectionString;
         private CustomButton ultimoBotonPresionado = null;
         private CustomButton ultimoBotonPresionadoCalibre = null;
         string filePath;

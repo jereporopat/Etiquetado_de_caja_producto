@@ -374,7 +374,7 @@
     <None Include="Resources\LogoSC.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Db.pollos.accdb">
+    <Content Include="Data\Db.pollos.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="RJ+Cable.ico" />

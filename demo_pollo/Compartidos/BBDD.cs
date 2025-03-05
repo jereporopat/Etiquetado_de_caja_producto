@@ -13,7 +13,7 @@ namespace demo_pollo.Compartidos
 {
     internal class BBDD
     {
-        private static string cadenaDeConeccion = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Resources\\Db.pollos.accdb";
+        private static string cadenaDeConeccion = demo_pollo.Properties.Settings.Default.Db_pollosConnectionString;
 
 
         public static List<Producto> BuscarProductos()

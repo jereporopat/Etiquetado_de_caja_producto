@@ -108,4 +108,4 @@ C:\Users\esalvano\Desktop\emi\Repos\C#\demo_pollos\demo_pollo\obj\Debug\demo_pol
 C:\Users\esalvano\Desktop\emi\Repos\C#\demo_pollos\demo_pollo\obj\Debug\demo_pollo.csproj.Up2Date
 C:\Users\esalvano\Desktop\emi\Repos\C#\demo_pollos\demo_pollo\obj\Debug\demo_pollo.exe
 C:\Users\esalvano\Desktop\emi\Repos\C#\demo_pollos\demo_pollo\obj\Debug\demo_pollo.pdb
-C:\Users\esalvano\Desktop\emi\Repos\C#\demo_pollos\demo_pollo\bin\Debug\Resources\Db.pollos.accdb
+C:\Users\esalvano\Desktop\emi\Repos\C#\demo_pollos\demo_pollo\bin\Debug\Data\Db.pollos.accdb

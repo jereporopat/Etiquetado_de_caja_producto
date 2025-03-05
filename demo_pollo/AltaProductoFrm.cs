@@ -1,6 +1,8 @@
-﻿using System;
+﻿using demo_pollo.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.OleDb;
 using System.Drawing;
@@ -21,7 +23,7 @@ namespace demo_pollo
         private void CrearProductoBtn_Click(object sender, EventArgs e)
         {
             // Cadena de conexión a la base de datos Access
-            string cadenaConexion = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Resources\\Db.pollos.accdb";
+            string cadenaConexion = demo_pollo.Properties.Settings.Default.Db_pollosConnectionString;
 
             // Validar campos de texto
             if (string.IsNullOrWhiteSpace(txtDescripcion.Text) ||

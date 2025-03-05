@@ -74,7 +74,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>DyTEDsAgKCjbV7heZKH1Zdo+aOHGOmEQKFW/cqGMDBo=</dsig:DigestValue>
+        <dsig:DigestValue>X7i4z6+43kY35dX+H2LEhGR0b8+CD224P6uf03nBgxs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -630,13 +630,22 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="demo_pollo.exe.config" size="6937">
+  <file name="Data\Db.pollos.accdb" size="561152">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>LDpQWY+JHLcFLPB3EB5DV+CWBm7mRcR/YfS3Aq1dNNQ=</dsig:DigestValue>
+      <dsig:DigestValue>VuvaeCbzdO6OV1Y7oUta9oYvTZVCi3SQ7jPe7tLLKjo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="demo_pollo.exe.config" size="6932">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>D/JuvMFCoFRpdra3wNtxOVFeFsWbJe5GQ54/C0xzMlM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Microsoft.Data.SqlClient.SNI.x64.dll" size="501160">
@@ -655,15 +664,6 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>9gvxom0ShfwHuxTwjctTJFfriVUpuz9R/F95M2AYaLc=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Resources\Db.pollos.accdb" size="561152">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>VuvaeCbzdO6OV1Y7oUta9oYvTZVCi3SQ7jPe7tLLKjo=</dsig:DigestValue>
     </hash>
   </file>
   <file name="RJ+Cable.ico" size="32988">

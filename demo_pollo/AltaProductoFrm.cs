@@ -21,7 +21,7 @@ namespace demo_pollo
         private void CrearProductoBtn_Click(object sender, EventArgs e)
         {
             // Cadena de conexión a la base de datos Access
-            string cadenaConexion = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Application.StartupPath + "\\Db.pollos.accdb";
+            string cadenaConexion = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Resources\\Db.pollos.accdb";
 
             // Validar campos de texto
             if (string.IsNullOrWhiteSpace(txtDescripcion.Text) ||

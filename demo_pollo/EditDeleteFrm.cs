@@ -12,7 +12,7 @@ namespace demo_pollo
         List<Producto> productos;
         Producto productoSeleccionado;
 
-        string cadena = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Application.StartupPath + "\\Db.pollos.accdb";
+        string cadena = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Resources\\Db.pollos.accdb";
         
         public EditDeleteFrm()
         {

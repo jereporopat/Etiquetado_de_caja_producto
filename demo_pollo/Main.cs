@@ -23,13 +23,13 @@ namespace demo_pollo
         Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         string ruta_etq;
         // Conexión a la base de datos Access
-        readonly string cadena = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Application.StartupPath + "\\Db.pollos.accdb";
+        readonly string cadena = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Resources\\Db.pollos.accdb";
         private CustomButton ultimoBotonPresionado = null;
         private CustomButton ultimoBotonPresionadoCalibre = null;
         string filePath;
         string Descrip;
         int cod_prod = 0;
-
+        /*
         //Agregar para tener TRIAL
         private bool _Trial;
 
@@ -61,12 +61,12 @@ namespace demo_pollo
             _Trial = IsTrial;
 
         }
-
+        */
 
 
         // No trial
 
-        /*
+        
         public Main()
         {
             InitializeComponent();
@@ -75,7 +75,7 @@ namespace demo_pollo
             this.MaximumSize = SystemInformation.PrimaryMonitorMaximizedWindowSize;
             this.WindowState = FormWindowState.Maximized;
 
-        }*/
+        }
 
 
         private void CargarProductosEnBotonesProducto()

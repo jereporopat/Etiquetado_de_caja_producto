@@ -476,7 +476,7 @@
             this.pictureBox1.ErrorImage = global::demo_pollo.Properties.Resources.LogoSC;
             this.pictureBox1.Image = global::demo_pollo.Properties.Resources.Siscod3;
             this.pictureBox1.InitialImage = global::demo_pollo.Properties.Resources.LogoSC;
-            this.pictureBox1.Location = new System.Drawing.Point(22, 709);
+            this.pictureBox1.Location = new System.Drawing.Point(14, 712);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(112, 25);
@@ -588,7 +588,7 @@
             // 
             this.lblTrial.AutoSize = true;
             this.lblTrial.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTrial.Location = new System.Drawing.Point(156, 709);
+            this.lblTrial.Location = new System.Drawing.Point(163, 712);
             this.lblTrial.Name = "lblTrial";
             this.lblTrial.Size = new System.Drawing.Size(54, 25);
             this.lblTrial.TabIndex = 18;
@@ -596,15 +596,15 @@
             // 
             // btnMas
             // 
-            this.btnMas.BackColor = System.Drawing.Color.GreenYellow;
+            this.btnMas.BackColor = System.Drawing.Color.DimGray;
             this.btnMas.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnMas.FlatAppearance.BorderSize = 0;
             this.btnMas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMas.ForeColor = System.Drawing.Color.Black;
-            this.btnMas.Location = new System.Drawing.Point(22, 628);
+            this.btnMas.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMas.ForeColor = System.Drawing.Color.White;
+            this.btnMas.Location = new System.Drawing.Point(14, 628);
             this.btnMas.Name = "btnMas";
-            this.btnMas.Size = new System.Drawing.Size(203, 60);
+            this.btnMas.Size = new System.Drawing.Size(203, 72);
             this.btnMas.TabIndex = 17;
             this.btnMas.Text = "Mas...";
             this.btnMas.UseVisualStyleBackColor = false;
@@ -615,7 +615,7 @@
             this.imprimirBtn.BackColor = System.Drawing.Color.Navy;
             this.imprimirBtn.FlatAppearance.BorderSize = 0;
             this.imprimirBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.imprimirBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.imprimirBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.imprimirBtn.ForeColor = System.Drawing.Color.White;
             this.imprimirBtn.Location = new System.Drawing.Point(741, 628);
             this.imprimirBtn.Name = "imprimirBtn";
@@ -630,7 +630,7 @@
             this.btnTerminar.BackColor = System.Drawing.Color.Red;
             this.btnTerminar.FlatAppearance.BorderSize = 0;
             this.btnTerminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnTerminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTerminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTerminar.ForeColor = System.Drawing.Color.Black;
             this.btnTerminar.Location = new System.Drawing.Point(244, 628);
             this.btnTerminar.Name = "btnTerminar";

@@ -67,14 +67,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="demo_pollo.exe" size="750040">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="demo_pollo.exe" size="751064">
       <assemblyIdentity name="demo_pollo" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>X7i4z6+43kY35dX+H2LEhGR0b8+CD224P6uf03nBgxs=</dsig:DigestValue>
+        <dsig:DigestValue>vqxxBt7OzydmYtnM/EvSn6OnlUhxOV6wN8xAdKgT0qI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FilterControls.dll" size="20480">
+      <assemblyIdentity name="FilterControls" version="2.0.2432.37970" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>UaqG7V1uhy068A22lovB2kLccRYVZaxy79Dma2Wng7A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -403,6 +415,30 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SerialBoxes.dll" size="20480">
+      <assemblyIdentity name="SerialBoxes" version="1.0.2441.15934" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>P7UTglt/5qh8uGUBEqc2kYd2NK6hsr/1j47KZaidlmU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SoftwareLocker.dll" size="81408">
+      <assemblyIdentity name="SoftwareLocker" version="2.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>WnHuN11ZvqJ+W7Y5zVzszLVaNdvFSLTdYXCAeEis2bg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Buffers.dll" size="20856">
       <assemblyIdentity name="System.Buffers" version="4.0.3.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -630,13 +666,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Data\Db.pollos.accdb" size="561152">
+  <file name="Data\Db.pollos.accdb" size="602112">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>VuvaeCbzdO6OV1Y7oUta9oYvTZVCi3SQ7jPe7tLLKjo=</dsig:DigestValue>
+      <dsig:DigestValue>XzwFHuRfRNopV/ssqzvuy+RBi/f409t4m646fGzlrp4=</dsig:DigestValue>
     </hash>
   </file>
   <file name="demo_pollo.exe.config" size="6932">

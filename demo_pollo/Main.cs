@@ -29,7 +29,7 @@ namespace demo_pollo
         string filePath;
         string Descrip;
         int cod_prod = 0;
-        /*
+        
         //Agregar para tener TRIAL
         private bool _Trial;
 
@@ -61,12 +61,12 @@ namespace demo_pollo
             _Trial = IsTrial;
 
         }
-        */
+        
 
 
         // No trial
 
-        
+        /*
         public Main()
         {
             InitializeComponent();
@@ -77,7 +77,7 @@ namespace demo_pollo
 
         }
 
-
+        */
         private void CargarProductosEnBotonesProducto()
         {
             int indice = 0;
@@ -133,7 +133,7 @@ namespace demo_pollo
         {
             foreach (Control boton in botonesCalibre)
             {
-                //  boton.Text = "";
+                boton.Text = "][";
                 boton.Enabled = false;
                 boton.BackColor = Color.Gray;
 

@@ -74,19 +74,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>vqxxBt7OzydmYtnM/EvSn6OnlUhxOV6wN8xAdKgT0qI=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FilterControls.dll" size="20480">
-      <assemblyIdentity name="FilterControls" version="2.0.2432.37970" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>UaqG7V1uhy068A22lovB2kLccRYVZaxy79Dma2Wng7A=</dsig:DigestValue>
+        <dsig:DigestValue>GVgyW2jwfXFYJzSTtHzkHmh1z9vj09PO+gw8uWypscI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -411,18 +399,6 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
         <dsig:DigestValue>dgzk7YofOHempFeEaI1S29r3ilt0E4zJ9Y9SHDn9kJo=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SerialBoxes.dll" size="20480">
-      <assemblyIdentity name="SerialBoxes" version="1.0.2441.15934" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>P7UTglt/5qh8uGUBEqc2kYd2NK6hsr/1j47KZaidlmU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

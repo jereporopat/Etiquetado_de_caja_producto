@@ -171,6 +171,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_1CC9DFBE800945B492494001E57ED90E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_1D3CEA4AFE1833B17AFA2CB298EBDE67"
         "OwnerKey" = "8:_63E1A41E3F09D039D5F75252BAAEE396"
         "MsmSig" = "8:_UNDEFINED"
@@ -327,12 +333,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_3918E35F229446AEB2507B5EAFA35D0D"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_3A9E326B22984DF053DB4AC75541ABE5"
         "OwnerKey" = "8:_61363E26D1AB433AA077D826A2F4B50F"
         "MsmSig" = "8:_UNDEFINED"
@@ -405,6 +405,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_464625CE61E5443A9C4097AB221ED194"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_46A03331F4BB21CB8C0A7A861A3EF311"
         "OwnerKey" = "8:_61363E26D1AB433AA077D826A2F4B50F"
         "MsmSig" = "8:_UNDEFINED"
@@ -413,6 +419,12 @@
         {
         "MsmKey" = "8:_4838E803068FAD8E24EFDFC77AF4C845"
         "OwnerKey" = "8:_61363E26D1AB433AA077D826A2F4B50F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_483CB9C7C36D4CF6BF69396013709FA8"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -453,12 +465,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_5A9F76BA6360440FAA3302A7B1910042"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_5B86AACB37ECF673DCA2D3816AB7B8AC"
         "OwnerKey" = "8:_61363E26D1AB433AA077D826A2F4B50F"
         "MsmSig" = "8:_UNDEFINED"
@@ -484,12 +490,6 @@
         "Entry"
         {
         "MsmKey" = "8:_61363E26D1AB433AA077D826A2F4B50F"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_61C5F071DA064F8C9C36E393F37D6C34"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -1167,6 +1167,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_A6527A3868B119A1C4818E4F21DE6475"
+        "OwnerKey" = "8:_61363E26D1AB433AA077D826A2F4B50F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_A68B03E4B9427E35744CD9B05F8546B1"
         "OwnerKey" = "8:_61363E26D1AB433AA077D826A2F4B50F"
         "MsmSig" = "8:_UNDEFINED"
@@ -1251,12 +1257,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_B152E3FC9CCD4B0B8AFC89A5C953AED3"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_B47614043413F64F88455C855C5D8B71"
         "OwnerKey" = "8:_43738CF0F0C2EA6D23574C4E6FD97960"
         "MsmSig" = "8:_UNDEFINED"
@@ -1331,6 +1331,12 @@
         {
         "MsmKey" = "8:_BB1296D606BA7691212D5F71F440351D"
         "OwnerKey" = "8:_61363E26D1AB433AA077D826A2F4B50F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_BC783B64FB9341BB8E19E56E22775AEA"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1943,6 +1949,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_C8CAFA6768689F48872CCD80EE22DBD8"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_A6527A3868B119A1C4818E4F21DE6475"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -3221,6 +3233,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1CC9DFBE800945B492494001E57ED90E"
+            {
+            "SourcePath" = "8:..\\demo_pollo\\Resources\\Etiquetas\\ETQ_BASE2.nlbl"
+            "TargetName" = "8:ETQ_BASE2.nlbl"
+            "Tag" = "8:"
+            "Folder" = "8:_A798BB972F464B659266D2363883FE3D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1D3CEA4AFE1833B17AFA2CB298EBDE67"
             {
             "AssemblyRegister" = "3:1"
@@ -3799,26 +3831,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3918E35F229446AEB2507B5EAFA35D0D"
-            {
-            "SourcePath" = "8:..\\..\\..\\..\\..\\bin\\Debug\\Etiquetas\\ETQ_BASE2-1.prn"
-            "TargetName" = "8:ETQ_BASE2-1.prn"
-            "Tag" = "8:"
-            "Folder" = "8:_A798BB972F464B659266D2363883FE3D"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3A9E326B22984DF053DB4AC75541ABE5"
             {
             "AssemblyRegister" = "3:1"
@@ -4005,6 +4017,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_464625CE61E5443A9C4097AB221ED194"
+            {
+            "SourcePath" = "8:..\\demo_pollo\\Resources\\Etiquetas\\ETQ_BASE2.prn"
+            "TargetName" = "8:ETQ_BASE2.prn"
+            "Tag" = "8:"
+            "Folder" = "8:_A798BB972F464B659266D2363883FE3D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_46A03331F4BB21CB8C0A7A861A3EF311"
             {
             "AssemblyRegister" = "3:1"
@@ -4065,6 +4097,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_483CB9C7C36D4CF6BF69396013709FA8"
+            {
+            "SourcePath" = "8:..\\demo_pollo\\Resources\\Etiquetas\\ETQ_BASE2-1.prn"
+            "TargetName" = "8:ETQ_BASE2-1.prn"
+            "Tag" = "8:"
+            "Folder" = "8:_A798BB972F464B659266D2363883FE3D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_48950D3CB739B1022D6ABAB790C8B77B"
@@ -4222,26 +4274,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5A9F76BA6360440FAA3302A7B1910042"
-            {
-            "SourcePath" = "8:..\\..\\..\\..\\..\\bin\\Debug\\Etiquetas\\ETQ_BASE2.prn"
-            "TargetName" = "8:ETQ_BASE2.prn"
-            "Tag" = "8:"
-            "Folder" = "8:_A798BB972F464B659266D2363883FE3D"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_5B86AACB37ECF673DCA2D3816AB7B8AC"
             {
             "AssemblyRegister" = "3:1"
@@ -4333,26 +4365,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_61C5F071DA064F8C9C36E393F37D6C34"
-            {
-            "SourcePath" = "8:..\\..\\..\\..\\..\\bin\\Debug\\Etiquetas\\ETQ_BASE2.nlbl"
-            "TargetName" = "8:ETQ_BASE2.nlbl"
-            "Tag" = "8:"
-            "Folder" = "8:_A798BB972F464B659266D2363883FE3D"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_63E1A41E3F09D039D5F75252BAAEE396"
@@ -5719,6 +5731,37 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A6527A3868B119A1C4818E4F21DE6475"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:SoftwareLocker, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_A6527A3868B119A1C4818E4F21DE6475"
+                    {
+                    "Name" = "8:SoftwareLocker.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:SoftwareLocker.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_10DE35FF13944D60ACF8FF29E55BE509"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A68B03E4B9427E35744CD9B05F8546B1"
             {
             "AssemblyRegister" = "3:1"
@@ -6060,26 +6103,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B152E3FC9CCD4B0B8AFC89A5C953AED3"
-            {
-            "SourcePath" = "8:..\\..\\..\\..\\..\\bin\\Debug\\Etiquetas\\ETQ_BASE2-1.nlbl"
-            "TargetName" = "8:ETQ_BASE2-1.nlbl"
-            "Tag" = "8:"
-            "Folder" = "8:_A798BB972F464B659266D2363883FE3D"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_B47614043413F64F88455C855C5D8B71"
             {
             "AssemblyRegister" = "3:1"
@@ -6233,6 +6256,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BC783B64FB9341BB8E19E56E22775AEA"
+            {
+            "SourcePath" = "8:..\\demo_pollo\\Resources\\Etiquetas\\ETQ_BASE2-1.nlbl"
+            "TargetName" = "8:ETQ_BASE2-1.nlbl"
+            "Tag" = "8:"
+            "Folder" = "8:_A798BB972F464B659266D2363883FE3D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C47007C97042F670E3D29E645A787E26"
@@ -7428,9 +7471,9 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:Setup1"
+        "ProductName" = "8:EtiqCajProducto"
         "ProductCode" = "8:{921B85C0-E5E0-4C76-A9B9-8F25E28961E6}"
-        "PackageCode" = "8:{57EC5F1A-117A-4C67-8573-0E825E8FF1F3}"
+        "PackageCode" = "8:{70433673-57B4-4A55-BE39-03A84703C059}"
         "UpgradeCode" = "8:{4F47D8FF-2EA8-49C3-B34B-8C1B311EAD5F}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -7438,12 +7481,12 @@
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
         "ProductVersion" = "8:1.0.0"
-        "Manufacturer" = "8:Default Company Name"
+        "Manufacturer" = "8:Siscod"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:Setup1"
+        "Title" = "8:EtiqCajProducto"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:Default Company Name"
+        "ARPCONTACT" = "8:Siscod"
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"

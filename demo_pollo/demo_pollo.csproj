@@ -355,6 +355,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\Etiquetas\ETQ_BASE2-1.nlbl" />
+    <None Include="Resources\Etiquetas\ETQ_BASE2-1.prn" />
+    <None Include="Resources\Etiquetas\ETQ_BASE2.nlbl" />
+    <None Include="Resources\Etiquetas\ETQ_BASE2.prn" />
     <None Include="_Db_pollosDataSet3.xsc">
       <DependentUpon>_Db_pollosDataSet3.xsd</DependentUpon>
     </None>

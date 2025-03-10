@@ -12,7 +12,7 @@
               <DbSource ConnectionRef="Db_pollosConnectionString (Settings)" DbObjectName="Etiquetas_impresas" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT fecha_hora, producto, calibre FROM Etiquetas_impresas</CommandText>
+                    <CommandText>SELECT fecha_hora, producto, calibre, nom_etq FROM Etiquetas_impresas</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -22,12 +22,13 @@
               <Mapping SourceColumn="fecha_hora" DataSetColumn="fecha_hora" />
               <Mapping SourceColumn="producto" DataSetColumn="producto" />
               <Mapping SourceColumn="calibre" DataSetColumn="calibre" />
+              <Mapping SourceColumn="nom_etq" DataSetColumn="nom_etq" />
             </Mappings>
             <Sources>
               <DbSource ConnectionRef="Db_pollosConnectionString (Settings)" DbObjectName="Etiquetas_impresas" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT fecha_hora, producto, calibre FROM Etiquetas_impresas</CommandText>
+                    <CommandText>SELECT fecha_hora, producto, calibre, nom_etq FROM Etiquetas_impresas</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -42,12 +43,19 @@
   <xs:element name="_Db_pollosDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="_Db_pollosDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_Db_pollosDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Etiquetas_impresas" msprop:Generator_RowClassName="Etiquetas_impresasRow" msprop:Generator_RowEvHandlerName="Etiquetas_impresasRowChangeEventHandler" msprop:Generator_RowDeletedName="Etiquetas_impresasRowDeleted" msprop:Generator_RowDeletingName="Etiquetas_impresasRowDeleting" msprop:Generator_RowEvArgName="Etiquetas_impresasRowChangeEvent" msprop:Generator_TablePropName="Etiquetas_impresas" msprop:Generator_RowChangedName="Etiquetas_impresasRowChanged" msprop:Generator_UserTableName="Etiquetas_impresas" msprop:Generator_RowChangingName="Etiquetas_impresasRowChanging" msprop:Generator_TableClassName="Etiquetas_impresasDataTable" msprop:Generator_TableVarName="tableEtiquetas_impresas">
+        <xs:element name="Etiquetas_impresas" msprop:Generator_RowEvHandlerName="Etiquetas_impresasRowChangeEventHandler" msprop:Generator_RowDeletedName="Etiquetas_impresasRowDeleted" msprop:Generator_RowDeletingName="Etiquetas_impresasRowDeleting" msprop:Generator_RowEvArgName="Etiquetas_impresasRowChangeEvent" msprop:Generator_TablePropName="Etiquetas_impresas" msprop:Generator_RowChangedName="Etiquetas_impresasRowChanged" msprop:Generator_UserTableName="Etiquetas_impresas" msprop:Generator_RowChangingName="Etiquetas_impresasRowChanging" msprop:Generator_RowClassName="Etiquetas_impresasRow" msprop:Generator_TableClassName="Etiquetas_impresasDataTable" msprop:Generator_TableVarName="tableEtiquetas_impresas">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="fecha_hora" msprop:Generator_UserColumnName="fecha_hora" msprop:Generator_ColumnPropNameInTable="fecha_horaColumn" msprop:Generator_ColumnPropNameInRow="fecha_hora" msprop:Generator_ColumnVarNameInTable="columnfecha_hora" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="producto" msprop:Generator_UserColumnName="producto" msprop:Generator_ColumnPropNameInTable="productoColumn" msprop:Generator_ColumnPropNameInRow="producto" msprop:Generator_ColumnVarNameInTable="columnproducto" type="xs:int" minOccurs="0" />
-              <xs:element name="calibre" msprop:Generator_UserColumnName="calibre" msprop:Generator_ColumnPropNameInTable="calibreColumn" msprop:Generator_ColumnPropNameInRow="calibre" msprop:Generator_ColumnVarNameInTable="columncalibre" type="xs:int" minOccurs="0" />
+              <xs:element name="fecha_hora" msprop:Generator_ColumnPropNameInTable="fecha_horaColumn" msprop:Generator_ColumnPropNameInRow="fecha_hora" msprop:Generator_UserColumnName="fecha_hora" msprop:Generator_ColumnVarNameInTable="columnfecha_hora" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="producto" msprop:Generator_ColumnPropNameInTable="productoColumn" msprop:Generator_ColumnPropNameInRow="producto" msprop:Generator_UserColumnName="producto" msprop:Generator_ColumnVarNameInTable="columnproducto" type="xs:int" minOccurs="0" />
+              <xs:element name="calibre" msprop:Generator_ColumnPropNameInTable="calibreColumn" msprop:Generator_ColumnPropNameInRow="calibre" msprop:Generator_UserColumnName="calibre" msprop:Generator_ColumnVarNameInTable="columncalibre" type="xs:int" minOccurs="0" />
+              <xs:element name="nom_etq" msprop:Generator_ColumnPropNameInRow="nom_etq" msprop:Generator_ColumnPropNameInTable="nom_etqColumn" msprop:Generator_ColumnVarNameInTable="columnnom_etq" msprop:Generator_UserColumnName="nom_etq" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>

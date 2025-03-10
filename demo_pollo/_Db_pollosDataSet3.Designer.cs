@@ -285,6 +285,8 @@ namespace demo_pollo {
             
             private global::System.Data.DataColumn columncalibre;
             
+            private global::System.Data.DataColumn columnnom_etq;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public Etiquetas_impresasDataTable() {
@@ -344,6 +346,14 @@ namespace demo_pollo {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn nom_etqColumn {
+                get {
+                    return this.columnnom_etq;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -379,12 +389,13 @@ namespace demo_pollo {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Etiquetas_impresasRow AddEtiquetas_impresasRow(System.DateTime fecha_hora, int producto, int calibre) {
+            public Etiquetas_impresasRow AddEtiquetas_impresasRow(System.DateTime fecha_hora, int producto, int calibre, string nom_etq) {
                 Etiquetas_impresasRow rowEtiquetas_impresasRow = ((Etiquetas_impresasRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         fecha_hora,
                         producto,
-                        calibre};
+                        calibre,
+                        nom_etq};
                 rowEtiquetas_impresasRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowEtiquetas_impresasRow);
                 return rowEtiquetas_impresasRow;
@@ -410,6 +421,7 @@ namespace demo_pollo {
                 this.columnfecha_hora = base.Columns["fecha_hora"];
                 this.columnproducto = base.Columns["producto"];
                 this.columncalibre = base.Columns["calibre"];
+                this.columnnom_etq = base.Columns["nom_etq"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -421,6 +433,9 @@ namespace demo_pollo {
                 base.Columns.Add(this.columnproducto);
                 this.columncalibre = new global::System.Data.DataColumn("calibre", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columncalibre);
+                this.columnnom_etq = new global::System.Data.DataColumn("nom_etq", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnnom_etq);
+                this.columnnom_etq.MaxLength = 536870910;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -611,6 +626,22 @@ namespace demo_pollo {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string nom_etq {
+                get {
+                    try {
+                        return ((string)(this[this.tableEtiquetas_impresas.nom_etqColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'nom_etq\' de la tabla \'Etiquetas_impresas\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableEtiquetas_impresas.nom_etqColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool Isfecha_horaNull() {
                 return this.IsNull(this.tableEtiquetas_impresas.fecha_horaColumn);
             }
@@ -643,6 +674,18 @@ namespace demo_pollo {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetcalibreNull() {
                 this[this.tableEtiquetas_impresas.calibreColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isnom_etqNull() {
+                return this.IsNull(this.tableEtiquetas_impresas.nom_etqColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setnom_etqNull() {
+                this[this.tableEtiquetas_impresas.nom_etqColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -808,6 +851,7 @@ namespace demo_pollo._Db_pollosDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("fecha_hora", "fecha_hora");
             tableMapping.ColumnMappings.Add("producto", "producto");
             tableMapping.ColumnMappings.Add("calibre", "calibre");
+            tableMapping.ColumnMappings.Add("nom_etq", "nom_etq");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -824,11 +868,11 @@ namespace demo_pollo._Db_pollosDataSetTableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[2];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT fecha_hora, producto, calibre FROM Etiquetas_impresas";
+            this._commandCollection[0].CommandText = "SELECT fecha_hora, producto, calibre, nom_etq FROM Etiquetas_impresas";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT fecha_hora, producto, calibre FROM Etiquetas_impresas";
+            this._commandCollection[1].CommandText = "SELECT fecha_hora, producto, calibre, nom_etq FROM Etiquetas_impresas";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
         }
         

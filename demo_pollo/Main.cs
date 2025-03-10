@@ -428,6 +428,7 @@ namespace demo_pollo
 
                 Streader = new StreamReader(pathEtiqueta);
                 string line;
+
                 line = Streader.ReadLine();
                 char[] anyOf;
                 int Index;
@@ -438,6 +439,14 @@ namespace demo_pollo
 
                     if (line != null)
                     {
+                        if (line.Contains("^MMX"))
+                        {
+                            anyOf = "^".ToCharArray();
+                            Index = line.IndexOfAny(anyOf, 0);
+                            line.Remove(Index + 3, 1);
+                            line = line.Insert(Index + 3, "R");
+                        }
+
                         if (line.Contains("\\^FDCA^FS"))
                         {                   
                             anyOf = "\\".ToCharArray();//busca CA de Calibre
@@ -563,8 +572,8 @@ namespace demo_pollo
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString());
-                //  MessageBox.Show("La Impresora Zebra se Desconectó  !!!\nVerifique su correcta alimentación y el cable de comunicación Ethernet.\nVerifique la Direccion IP.\nPara reconectar, reinicie el Sistema.", "Error de Sistema.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+               // MessageBox.Show(ex.ToString());
+                 MessageBox.Show("La Etiqueta asignada al producto, o su Ruta No Existen !!!\nVerifique el archivo de Etiqueta asignado en el ABM de Producto.", "Error de Operación/Configuración.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
         private void CargarReporte()

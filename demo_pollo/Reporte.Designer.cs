@@ -37,6 +37,10 @@
             this.fechahoraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.calibreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nom_etq = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.etiquetasimpresasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._Db_pollosDataSet)).BeginInit();
@@ -52,13 +56,14 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.fechahoraDataGridViewTextBoxColumn,
             this.productoDataGridViewTextBoxColumn,
-            this.calibreDataGridViewTextBoxColumn});
+            this.calibreDataGridViewTextBoxColumn,
+            this.nom_etq});
             this.dataGridView1.DataSource = this.etiquetasimpresasBindingSource;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(297, 450);
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.Size = new System.Drawing.Size(411, 385);
             this.dataGridView1.TabIndex = 0;
             // 
             // etiquetasimpresasBindingSource
@@ -102,16 +107,57 @@
             this.calibreDataGridViewTextBoxColumn.ReadOnly = true;
             this.calibreDataGridViewTextBoxColumn.Width = 70;
             // 
+            // nom_etq
+            // 
+            this.nom_etq.DataPropertyName = "nom_etq";
+            this.nom_etq.HeaderText = "ETIQUETA";
+            this.nom_etq.Name = "nom_etq";
+            this.nom_etq.ReadOnly = true;
+            this.nom_etq.Width = 150;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(22, 401);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(104, 37);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "IMPRIMIR";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(150, 401);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(104, 37);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "EXPORTAR";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(276, 401);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(104, 37);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "SALIR";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Reporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(297, 450);
+            this.ClientSize = new System.Drawing.Size(411, 450);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Reporte";
-            this.Text = "Reporte";
+            this.Text = "Reportes";
             this.Load += new System.EventHandler(this.Reporte_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.etiquetasimpresasBindingSource)).EndInit();
@@ -129,5 +175,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn fechahoraDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn calibreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nom_etq;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

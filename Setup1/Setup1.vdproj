@@ -1035,6 +1035,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_A684D843E49E4E1B996E691B2438AC2D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_A68B03E4B9427E35744CD9B05F8546B1"
         "OwnerKey" = "8:_61363E26D1AB433AA077D826A2F4B50F"
         "MsmSig" = "8:_UNDEFINED"
@@ -5717,6 +5723,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A684D843E49E4E1B996E691B2438AC2D"
+            {
+            "SourcePath" = "8:..\\..\\..\\Iconos\\zt411.ico"
+            "TargetName" = "8:zt411.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_8AF98997214D45109BDF17D9CE6FD950"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A68B03E4B9427E35744CD9B05F8546B1"
             {
             "AssemblyRegister" = "3:1"
@@ -7551,6 +7577,17 @@
             "Property" = "8:TARGETDIR"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_8AF98997214D45109BDF17D9CE6FD950"
+                    {
+                    "Name" = "8:Iconos"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_BFF4AE524BE44C08BCFFF4BB1DC7AB51"
+                        "Folders"
+                        {
+                        }
+                    }
                     "{9EF0B969-E518-4E46-987F-47570745A589}:_A798BB972F464B659266D2363883FE3D"
                     {
                     "Name" = "8:Etiquetas"
@@ -7614,7 +7651,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:EtiqCajProducto"
         "ProductCode" = "8:{921B85C0-E5E0-4C76-A9B9-8F25E28961E6}"
-        "PackageCode" = "8:{70433673-57B4-4A55-BE39-03A84703C059}"
+        "PackageCode" = "8:{F9DDC071-8A86-4FDD-8244-12DCF5AA0D02}"
         "UpgradeCode" = "8:{4F47D8FF-2EA8-49C3-B34B-8C1B311EAD5F}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -7734,7 +7771,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_C157FB27600C417C822AC87B25FA9899"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_B2C501822D29414DA0941E67D197042B"
             {
             "Name" = "8:EtqCajProducto"
             "Arguments" = "8:"
@@ -7742,13 +7779,13 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_F3CFC5A46F10442181FD8952433F3783"
-            "Folder" = "8:_F3CFC5A46F10442181FD8952433F3783"
-            "WorkingFolder" = "8:_F3CFC5A46F10442181FD8952433F3783"
-            "Icon" = "8:"
+            "Target" = "8:_61363E26D1AB433AA077D826A2F4B50F"
+            "Folder" = "8:_3622A5704B0C4D80ACD2F18D0AD54A91"
+            "WorkingFolder" = "8:_10DE35FF13944D60ACF8FF29E55BE509"
+            "Icon" = "8:_A684D843E49E4E1B996E691B2438AC2D"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_EB7D94549D544050AE167159457DE69D"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_F48AF9A8CF73483AB24D6EDFF1B3417A"
             {
             "Name" = "8:EtqCajProducto"
             "Arguments" = "8:"
@@ -7756,10 +7793,10 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_3622A5704B0C4D80ACD2F18D0AD54A91"
-            "Folder" = "8:_3622A5704B0C4D80ACD2F18D0AD54A91"
-            "WorkingFolder" = "8:_3622A5704B0C4D80ACD2F18D0AD54A91"
-            "Icon" = "8:"
+            "Target" = "8:_61363E26D1AB433AA077D826A2F4B50F"
+            "Folder" = "8:_F3CFC5A46F10442181FD8952433F3783"
+            "WorkingFolder" = "8:_10DE35FF13944D60ACF8FF29E55BE509"
+            "Icon" = "8:_A684D843E49E4E1B996E691B2438AC2D"
             "Feature" = "8:"
             }
         }

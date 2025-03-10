@@ -85,7 +85,8 @@ namespace demo_pollo
             productoSeleccionado.setConservacion((int)conservacionCb.SelectedValue);
             productoSeleccionado.setGrado((int)gradoCb.SelectedValue);
 
-            //BBDD.GuardarProducto(productoSeleccionado);
+            BBDD.GuardarProducto(productoSeleccionado);
+           // GuardarProductos();
 
             CargarListaDeProductos();
         }

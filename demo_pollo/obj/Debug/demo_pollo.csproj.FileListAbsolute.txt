@@ -226,3 +226,5 @@ D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\bin\Debug\zh-Hans\Microso
 D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
 D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\obj\Debug\demo_pollo.application
 D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\obj\Debug\demo_pollo.csproj.Up2Date
+D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\bin\Debug\Microsoft.WindowsAPICodePack.dll
+D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\bin\Debug\Microsoft.WindowsAPICodePack.xml

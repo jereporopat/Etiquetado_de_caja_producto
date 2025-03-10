@@ -382,7 +382,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Data\Db.pollos.accdb">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="RJ+Cable.ico" />
     <Content Include="zt411-2.ico" />

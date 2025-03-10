@@ -67,14 +67,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="demo_pollo.exe" size="753112">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="demo_pollo.exe" size="753624">
       <assemblyIdentity name="demo_pollo" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>p5SSriPEmOZcnfvvt6DNjLezTXBkJll5ogeDu/SvIOo=</dsig:DigestValue>
+        <dsig:DigestValue>t8cA3pSuz9b9qA+tVTa3yY+EeU9duEsMAzG4BW1QU+A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -415,6 +415,18 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.WindowsAPICodePack.dll" size="98304">
+      <assemblyIdentity name="Microsoft.WindowsAPICodePack" version="1.1.2.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>gI6W9Z590iEurOBJB50lVF9snD8FJE7JzcU5/aGNNNY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SerialBoxes.dll" size="20480">
       <assemblyIdentity name="SerialBoxes" version="1.0.2441.15934" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -666,13 +678,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Data\Db.pollos.accdb" size="602112">
+  <file name="Data\Db.pollos.accdb" size="606208">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>kn+ACwl5Yk7aOf4KD9CYAW364O/XLp4FXhqz3wZtWj8=</dsig:DigestValue>
+      <dsig:DigestValue>i6MvUwloMfnHFRzYucFGvPTWDUOW4PAFEzatccuavEk=</dsig:DigestValue>
     </hash>
   </file>
   <file name="demo_pollo.exe.config" size="6932">
@@ -681,7 +693,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>D/JuvMFCoFRpdra3wNtxOVFeFsWbJe5GQ54/C0xzMlM=</dsig:DigestValue>
+      <dsig:DigestValue>DkSkuMLU4xSFLtq6K4ay9l1ZiaOS6kGNSGqITyHj1hw=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Microsoft.Data.SqlClient.SNI.x64.dll" size="501160">

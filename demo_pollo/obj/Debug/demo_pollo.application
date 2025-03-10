@@ -7,14 +7,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="demo_pollo.exe.manifest" size="42634">
+    <dependentAssembly dependencyType="install" codebase="demo_pollo.exe.manifest" size="43308">
       <assemblyIdentity name="demo_pollo.exe" version="1.0.0.3" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>wSkGaHe4651qjElWlA2VOjBNgJSKMg5XJ2nZhiiNfC8=</dsig:DigestValue>
+        <dsig:DigestValue>Rp1U191dpg+gbQ6k3dWrvZKsI2GgnlF1b0gWptkxIGQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

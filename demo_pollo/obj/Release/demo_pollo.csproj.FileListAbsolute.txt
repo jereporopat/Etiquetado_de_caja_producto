@@ -226,3 +226,5 @@ D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\obj\Release\demo_pollo.ap
 D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\obj\Release\demo_pollo.csproj.Up2Date
 D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\obj\Release\demo_pollo.exe
 D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\obj\Release\demo_pollo.pdb
+D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\bin\Release\Microsoft.WindowsAPICodePack.dll
+D:\Visual Studio C#\San Andrés\demo_pollos\demo_pollo\bin\Release\Microsoft.WindowsAPICodePack.xml

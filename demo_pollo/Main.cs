@@ -1,5 +1,6 @@
 ﻿using demo_pollo.Compartidos;
 using demo_pollo.Properties;
+using Microsoft.WindowsAPICodePack.Dialogs;
 using System;
 using System.Collections.Generic;
 using System.Data.OleDb;
@@ -192,7 +193,7 @@ namespace demo_pollo
             if (listBoxItems.SelectedItem != null)
             {
                 // Obtiene el producto seleccionado
-                string productoSeleccionado = listBoxItems.SelectedItem.ToString();
+               // string productoSeleccionado = listBoxItems.SelectedItem.ToString();
 
                 CargarDatosProducto(listBoxItems.SelectedItem.ToString());
             }
@@ -277,12 +278,13 @@ namespace demo_pollo
 
             ActivarBotones(productoSeleccionado);
         }
-
+        /*
         private void LogError(string message)
         {
             string logPath = Path.Combine(Application.StartupPath, "error_log.txt");
             File.AppendAllText(logPath, $"{DateTime.Now}: {message}{Environment.NewLine}");
         }
+        */
         private void CargarDatosProducto(string producto)
         {
             // Consulta SQL para obtener los datos del producto
@@ -361,6 +363,11 @@ namespace demo_pollo
         //Imprimir
         private void imprimirBtn_Click(object sender, EventArgs e)
         {
+            if (ultimoBotonPresionado == null)
+            {
+                MessageBox.Show("Se debe seleccionar un Producto !!", "Error de Operación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             if (ultimoBotonPresionado.GetProducto().getCalibres().Count > 0
                 && ultimoBotonPresionadoCalibre == null)
@@ -399,8 +406,14 @@ namespace demo_pollo
                     }
                     else
                     {
-                        MessageBox.Show("La Impresora Zebra no responde a la IP " + settings.IP_Zebra.ToString() + " !!!\nVerifique su correcta alimentación y el cable de comunicación Ethernet.\nVerifique la Direccion IP.\nPara reconectar, reinicie el Sistema.", "Error de Operación.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        Application.Restart();
+                        //new TaskDialog(); a futuro.....
+
+
+                        DialogResult = MessageBox.Show("La Impresora Zebra no responde a la IP " + settings.IP_Zebra.ToString() + " !!!\nVerifique su correcta alimentación y el cable de comunicación Ethernet.\nVerifique la Direccion IP.\nPara Reconectar, Pulse Aceptar y el Sistema Reiniciará.\nPara Continuar sin Conexión, Pulse Cancel.", "Error de Operación.", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+                        if(DialogResult == DialogResult.OK)
+                            Application.Restart();
+                        
+                            
                     }
                 }
                 catch (Exception)
@@ -417,7 +430,7 @@ namespace demo_pollo
         private void SET_ETQ()
         {
             StreamReader Streader;
-            byte[] msgbuffer = null;
+            byte[] msgbuffer ;
             try
             {
                 listBox1.Items.Clear();//para guardar archivo de etiqueta, no esta visible en pantalla
@@ -559,8 +572,8 @@ namespace demo_pollo
                 }
                 else
                 {
-                    DialogResult respuesta = MessageBox.Show("La Impresora Zebra se desconectó\nReiniciar la Aplicación.", "Fallo Anormal", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
-                    if (respuesta == DialogResult.Cancel)
+                    DialogResult respuesta = MessageBox.Show("La Impresora Zebra se desconectó\nReiniciar la Aplicación.", "Fallo Anormal", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    if (respuesta == DialogResult.OK)
                         sock.Close();
                     // Application.Restart();
                     //  if (respuesta == DialogResult.OK)
@@ -570,9 +583,9 @@ namespace demo_pollo
 
                 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-               // MessageBox.Show(ex.ToString());
+              
                  MessageBox.Show("La Etiqueta asignada al producto, o su Ruta No Existen !!!\nVerifique el archivo de Etiqueta asignado en el ABM de Producto.", "Error de Operación/Configuración.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }

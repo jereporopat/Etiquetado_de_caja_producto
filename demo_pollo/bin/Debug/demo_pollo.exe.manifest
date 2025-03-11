@@ -74,19 +74,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>t8cA3pSuz9b9qA+tVTa3yY+EeU9duEsMAzG4BW1QU+A=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FilterControls.dll" size="20480">
-      <assemblyIdentity name="FilterControls" version="2.0.2432.37970" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>UaqG7V1uhy068A22lovB2kLccRYVZaxy79Dma2Wng7A=</dsig:DigestValue>
+        <dsig:DigestValue>rPrjv58U8ws/mqLz9WHzIe7woI29K9qaqaLxTz7WBx0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -415,30 +403,6 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.WindowsAPICodePack.dll" size="98304">
-      <assemblyIdentity name="Microsoft.WindowsAPICodePack" version="1.1.2.0" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>gI6W9Z590iEurOBJB50lVF9snD8FJE7JzcU5/aGNNNY=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SerialBoxes.dll" size="20480">
-      <assemblyIdentity name="SerialBoxes" version="1.0.2441.15934" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>P7UTglt/5qh8uGUBEqc2kYd2NK6hsr/1j47KZaidlmU=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SoftwareLocker.dll" size="81408">
       <assemblyIdentity name="SoftwareLocker" version="2.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -687,13 +651,13 @@
       <dsig:DigestValue>i6MvUwloMfnHFRzYucFGvPTWDUOW4PAFEzatccuavEk=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="demo_pollo.exe.config" size="6932">
+  <file name="demo_pollo.exe.config" size="6906">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>DkSkuMLU4xSFLtq6K4ay9l1ZiaOS6kGNSGqITyHj1hw=</dsig:DigestValue>
+      <dsig:DigestValue>P4ppx8NM7+0GuW4b9dLCdT5V7bpvkYs9uOJH7ElCMzk=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Microsoft.Data.SqlClient.SNI.x64.dll" size="501160">
